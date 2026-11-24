@@ -5,7 +5,7 @@
     "description": "Annotatore con coordinate temporali e spaziali, determinazioni temporali narrative e categorie configurabili.",
     "migratedExplicitTimes": 0,
     "positionConvention": "indici di carattere zero-based; inizio incluso, fine esclusa",
-    "exportedAt": "2026-11-24T15:22:09.597Z"
+    "exportedAt": "2026-11-24T19:23:29.280Z"
   },
   "annotations": {
     "narrative": [
@@ -1614,7 +1614,7 @@
         },
         "exactSpans": [],
         "fields": {
-          "Titolo_breve": "Argalia compare a Ferraù",
+          "Titolo_breve": "Ferraù indugia adirato presso il fiume",
           "Tipo_segmento": "",
           "Durata_genettiana": "scena",
           "Ordine_genettiano": "lineare",
@@ -1635,13 +1635,7 @@
                   "Valore": "",
                   "Unita": ""
                 }
-              ],
-              "Stima_min_quantita": [],
-              "Stima_max_quantita": [],
-              "Da_incluso": false,
-              "A_incluso": false,
-              "Per_Riferimento_ID": "",
-              "Punto_ripresa_successivo": ""
+              ]
             }
           ],
           "Determinazione_Collocazione": "relativo",
@@ -1677,12 +1671,12 @@
           "personaggio_incongruente": [],
           "riferimento_contraddizione": "",
           "aggancio_contraddizione": [],
-          "secondo_titolo": ""
+          "secondo_titolo": "",
+          "certezza_cronologia": ""
         },
         "custom": {},
         "createdAt": "2026-07-26T12:06:51.309Z",
-        "updatedAt": "2026-08-22T14:10:16.397Z",
-        "drafts": {}
+        "updatedAt": "2026-11-24T19:15:17.614Z"
       },
       {
         "id": "N_I_25_7__I_30_8",
@@ -1725,13 +1719,7 @@
                   "Valore": "",
                   "Unita": ""
                 }
-              ],
-              "Stima_min_quantita": [],
-              "Stima_max_quantita": [],
-              "Da_incluso": false,
-              "A_incluso": false,
-              "Per_Riferimento_ID": "",
-              "Punto_ripresa_successivo": ""
+              ]
             }
           ],
           "Determinazione_Collocazione": "relativo",
@@ -1766,12 +1754,12 @@
           "personaggio_incongruente": [],
           "riferimento_contraddizione": "",
           "aggancio_contraddizione": [],
-          "secondo_titolo": ""
+          "secondo_titolo": "",
+          "certezza_cronologia": ""
         },
         "custom": {},
         "createdAt": "2026-07-26T12:13:35.656Z",
-        "updatedAt": "2026-08-13T15:41:03.114Z",
-        "drafts": {}
+        "updatedAt": "2026-11-24T19:14:55.963Z"
       },
       {
         "id": "N_I_31_3__I_31_3",
@@ -2338,10 +2326,7 @@
                   "Valore": "2",
                   "Unita": "giorni"
                 }
-              ],
-              "Stima_min_quantita": [],
-              "Stima_max_quantita": [],
-              "Riferimento_incluso": false
+              ]
             }
           ],
           "Determinazione_Collocazione": "relativo",
@@ -2382,8 +2367,7 @@
         },
         "custom": {},
         "createdAt": "2026-07-26T12:29:25.236Z",
-        "updatedAt": "2026-08-23T13:00:54.937Z",
-        "drafts": {}
+        "updatedAt": "2026-11-24T19:22:40.228Z"
       },
       {
         "id": "N_I_35_3__I_35_8",
@@ -2425,13 +2409,7 @@
                   "Valore": "1",
                   "Unita": "giorni"
                 }
-              ],
-              "Stima_min_quantita": [],
-              "Stima_max_quantita": [],
-              "Da_incluso": false,
-              "A_incluso": false,
-              "Per_Riferimento_ID": "",
-              "Punto_ripresa_successivo": ""
+              ]
             }
           ],
           "Determinazione_Collocazione": "relativo",
@@ -2467,13 +2445,12 @@
           "personaggio_incongruente": [],
           "riferimento_contraddizione": "",
           "aggancio_contraddizione": [],
-          "secondo_titolo": "Angelica fugge per un giorno e mezzo",
+          "secondo_titolo": "Angelica giunge in un boschetto",
           "certezza_cronologia": ""
         },
         "custom": {},
         "createdAt": "2026-07-26T12:34:39.723Z",
-        "updatedAt": "2026-08-23T10:14:49.822Z",
-        "drafts": {}
+        "updatedAt": "2026-11-24T19:23:29.246Z"
       },
       {
         "id": "N_I_36_1__I_38_4",
@@ -13818,7 +13795,7 @@
         },
         "exactSpans": [],
         "fields": {
-          "Titolo_breve": "Bradamante torna a trovare Melissa",
+          "Titolo_breve": "Bradamante decide di tornare a trovare Melissa",
           "Tipo_segmento": "",
           "Durata_genettiana": "scena",
           "Ordine_genettiano": "lineare",
@@ -13839,13 +13816,7 @@
                   "Valore": "10",
                   "Unita": "giorni"
                 }
-              ],
-              "Stima_min_quantita": [],
-              "Stima_max_quantita": [],
-              "Da_incluso": false,
-              "A_incluso": false,
-              "Per_Riferimento_ID": "",
-              "Punto_ripresa_successivo": ""
+              ]
             }
           ],
           "Determinazione_Collocazione": "relativo",
@@ -13887,8 +13858,7 @@
         },
         "custom": {},
         "createdAt": "2026-07-26T20:55:34.045Z",
-        "updatedAt": "2026-08-24T08:39:37.635Z",
-        "drafts": {}
+        "updatedAt": "2026-11-24T19:15:56.146Z"
       },
       {
         "id": "N_VII_38_1__VII_38_4",
@@ -14024,10 +13994,7 @@
                   "Valore": "",
                   "Unita": ""
                 }
-              ],
-              "Stima_min_quantita": [],
-              "Stima_max_quantita": [],
-              "Riferimento_incluso": false
+              ]
             }
           ],
           "Determinazione_Collocazione": "relativo",
@@ -14072,8 +14039,7 @@
         },
         "custom": {},
         "createdAt": "2026-07-26T21:06:44.947Z",
-        "updatedAt": "2026-09-26T18:13:57.168Z",
-        "drafts": {}
+        "updatedAt": "2026-11-24T19:15:18.978Z"
       },
       {
         "id": "N_VII_44_1__VII_44_8",
@@ -24928,7 +24894,7 @@
         },
         "exactSpans": [],
         "fields": {
-          "Titolo_breve": "Ruggiero parte dall'isola di Alcina",
+          "Titolo_breve": "Ruggiero parte dal regno di Logistilla",
           "Tipo_segmento": "",
           "Durata_genettiana": "scena",
           "Ordine_genettiano": "lineare",
@@ -24949,13 +24915,7 @@
                   "Valore": "2",
                   "Unita": "giorni"
                 }
-              ],
-              "Stima_min_quantita": [],
-              "Stima_max_quantita": [],
-              "Da_incluso": false,
-              "A_incluso": false,
-              "Per_Riferimento_ID": "",
-              "Punto_ripresa_successivo": ""
+              ]
             }
           ],
           "Determinazione_Collocazione": "relativo",
@@ -24999,8 +24959,7 @@
         },
         "custom": {},
         "createdAt": "2026-07-27T13:48:06.202Z",
-        "updatedAt": "2026-09-26T18:30:03.780Z",
-        "drafts": {}
+        "updatedAt": "2026-11-24T19:16:20.747Z"
       },
       {
         "id": "N_X_68_1__X_68_4",
@@ -25043,13 +25002,7 @@
                   "Valore": "",
                   "Unita": ""
                 }
-              ],
-              "Stima_min_quantita": [],
-              "Stima_max_quantita": [],
-              "Da_incluso": false,
-              "A_incluso": false,
-              "Per_Riferimento_ID": "",
-              "Punto_ripresa_successivo": ""
+              ]
             }
           ],
           "Determinazione_Collocazione": "relativo",
@@ -25086,12 +25039,12 @@
           "personaggio_incongruente": [],
           "riferimento_contraddizione": "",
           "aggancio_contraddizione": [],
-          "secondo_titolo": ""
+          "secondo_titolo": "",
+          "certezza_cronologia": ""
         },
         "custom": {},
         "createdAt": "2026-07-27T13:54:43.449Z",
-        "updatedAt": "2026-08-22T12:25:30.566Z",
-        "drafts": {}
+        "updatedAt": "2026-11-24T19:16:06.930Z"
       },
       {
         "id": "N_X_69_1__X_69_8",
@@ -29168,7 +29121,7 @@
         },
         "exactSpans": [],
         "fields": {
-          "Titolo_breve": "Orlando viene imprigionato nel palazzo di Atlante",
+          "Titolo_breve": "Orlando ode un grido nel bosco",
           "Tipo_segmento": "",
           "Durata_genettiana": "scena",
           "Ordine_genettiano": "lineare",
@@ -29189,13 +29142,7 @@
                   "Valore": "10",
                   "Unita": "giorni"
                 }
-              ],
-              "Stima_min_quantita": [],
-              "Stima_max_quantita": [],
-              "Da_incluso": false,
-              "A_incluso": false,
-              "Per_Riferimento_ID": "",
-              "Punto_ripresa_successivo": ""
+              ]
             }
           ],
           "Determinazione_Collocazione": "relativo",
@@ -29241,8 +29188,7 @@
         },
         "custom": {},
         "createdAt": "2026-07-27T16:12:08.366Z",
-        "updatedAt": "2026-09-26T18:32:13.682Z",
-        "drafts": {}
+        "updatedAt": "2026-11-24T19:17:32.680Z"
       },
       {
         "id": "N_XI_82_1__XI_82_2",
@@ -29621,13 +29567,7 @@
                   "Valore": "",
                   "Unita": ""
                 }
-              ],
-              "Stima_min_quantita": [],
-              "Stima_max_quantita": [],
-              "Da_incluso": false,
-              "A_incluso": false,
-              "Per_Riferimento_ID": "",
-              "Punto_ripresa_successivo": ""
+              ]
             }
           ],
           "Determinazione_Collocazione": "relativo",
@@ -29666,12 +29606,12 @@
           "aggancio_contraddizione": [
             "N_XI_82_1__XI_82_2"
           ],
-          "secondo_titolo": ""
+          "secondo_titolo": "",
+          "certezza_cronologia": ""
         },
         "custom": {},
         "createdAt": "2026-07-27T16:24:20.579Z",
-        "updatedAt": "2026-08-22T12:50:39.080Z",
-        "drafts": {}
+        "updatedAt": "2026-11-24T19:16:50.563Z"
       },
       {
         "id": "N_XI_80_4__XI_80_4",
@@ -29692,7 +29632,7 @@
         },
         "exactSpans": [],
         "fields": {
-          "Titolo_breve": "Orlando cammina verso Saint-Malo",
+          "Titolo_breve": "Orlando naviga verso Saint-Malo",
           "Tipo_segmento": "",
           "Durata_genettiana": "sommario",
           "Ordine_genettiano": "lineare",
@@ -29717,10 +29657,7 @@
                   "Valore": "3",
                   "Unita": "giorni"
                 }
-              ],
-              "Stima_min_quantita": [],
-              "Stima_max_quantita": [],
-              "Riferimento_incluso": false
+              ]
             }
           ],
           "Determinazione_Collocazione": "relativo",
@@ -29757,12 +29694,12 @@
           "personaggio_incongruente": [],
           "riferimento_contraddizione": "",
           "aggancio_contraddizione": [],
-          "secondo_titolo": ""
+          "secondo_titolo": "",
+          "certezza_cronologia": ""
         },
         "custom": {},
         "createdAt": "2026-07-27T16:25:04.144Z",
-        "updatedAt": "2026-08-22T12:54:34.647Z",
-        "drafts": {}
+        "updatedAt": "2026-11-24T19:17:13.897Z"
       },
       {
         "id": "N_XI_80_5__XI_80_8",
@@ -29804,13 +29741,7 @@
                   "Valore": "3",
                   "Unita": "giorni"
                 }
-              ],
-              "Stima_min_quantita": [],
-              "Stima_max_quantita": [],
-              "Da_incluso": false,
-              "A_incluso": false,
-              "Per_Riferimento_ID": "",
-              "Punto_ripresa_successivo": ""
+              ]
             }
           ],
           "Determinazione_Collocazione": "relativo",
@@ -29851,12 +29782,12 @@
           "aggancio_contraddizione": [
             "N_XI_82_1__XI_82_2"
           ],
-          "secondo_titolo": ""
+          "secondo_titolo": "",
+          "certezza_cronologia": ""
         },
         "custom": {},
         "createdAt": "2026-07-27T16:27:09.030Z",
-        "updatedAt": "2026-08-22T12:54:54.629Z",
-        "drafts": {}
+        "updatedAt": "2026-11-24T19:16:29.580Z"
       },
       {
         "id": "N_XI_83_1__XI_83_2",
@@ -33943,7 +33874,7 @@
         },
         "exactSpans": [],
         "fields": {
-          "Titolo_breve": "Orlando incontra Isabella",
+          "Titolo_breve": "Orlando giunge ai piedi di un monte",
           "Tipo_segmento": "",
           "Durata_genettiana": "scena",
           "Ordine_genettiano": "lineare",
@@ -33964,13 +33895,7 @@
                   "Valore": "20",
                   "Unita": "giorni"
                 }
-              ],
-              "Stima_min_quantita": [],
-              "Stima_max_quantita": [],
-              "Da_incluso": false,
-              "A_incluso": false,
-              "Per_Riferimento_ID": "",
-              "Punto_ripresa_successivo": ""
+              ]
             },
             {
               "Riferimento_ID": "T_XII_68_7",
@@ -33982,13 +33907,7 @@
                   "Valore": "",
                   "Unita": ""
                 }
-              ],
-              "Stima_min_quantita": [],
-              "Stima_max_quantita": [],
-              "Da_incluso": false,
-              "A_incluso": false,
-              "Per_Riferimento_ID": "",
-              "Punto_ripresa_successivo": ""
+              ]
             },
             {
               "Riferimento_ID": "N_XXIII_53_5__XXIII_54_1",
@@ -34000,13 +33919,7 @@
                   "Valore": "",
                   "Unita": ""
                 }
-              ],
-              "Stima_min_quantita": [],
-              "Stima_max_quantita": [],
-              "Da_incluso": false,
-              "A_incluso": false,
-              "Per_Riferimento_ID": "",
-              "Punto_ripresa_successivo": ""
+              ]
             }
           ],
           "Determinazione_Collocazione": "relativo",
@@ -34050,8 +33963,7 @@
         },
         "custom": {},
         "createdAt": "2026-07-27T22:01:56.442Z",
-        "updatedAt": "2026-08-23T11:05:54.950Z",
-        "drafts": {}
+        "updatedAt": "2026-11-24T19:17:50.597Z"
       },
       {
         "id": "N_XII_88_1__XII_89_8",
@@ -35286,8 +35198,7 @@
         },
         "custom": {},
         "createdAt": "2026-07-27T23:09:13.239Z",
-        "updatedAt": "2026-08-23T11:53:09.623Z",
-        "drafts": {}
+        "updatedAt": "2026-11-24T17:55:16.002Z"
       },
       {
         "id": "N_XIV_28_1__XIV_29_8",
@@ -35421,13 +35332,7 @@
                   "Valore": "",
                   "Unita": ""
                 }
-              ],
-              "Stima_min_quantita": [],
-              "Stima_max_quantita": [],
-              "Da_incluso": false,
-              "A_incluso": false,
-              "Per_Riferimento_ID": "",
-              "Punto_ripresa_successivo": ""
+              ]
             }
           ],
           "Determinazione_Collocazione": "relativo",
@@ -35471,8 +35376,7 @@
         },
         "custom": {},
         "createdAt": "2026-07-27T23:23:14.544Z",
-        "updatedAt": "2026-08-23T11:54:40.275Z",
-        "drafts": {}
+        "updatedAt": "2026-11-24T17:55:39.720Z"
       },
       {
         "id": "N_XIV_34_6__XIV_35_8",
@@ -36929,7 +36833,7 @@
         },
         "exactSpans": [],
         "fields": {
-          "Titolo_breve": "Carlo si prepara all'assalto di Parigi",
+          "Titolo_breve": "Carlo prega alla vigilia dell'assalto a Parigi",
           "Tipo_segmento": "",
           "Durata_genettiana": "scena",
           "Ordine_genettiano": "lineare",
@@ -36950,13 +36854,7 @@
                   "Valore": "",
                   "Unita": ""
                 }
-              ],
-              "Stima_min_quantita": [],
-              "Stima_max_quantita": [],
-              "Da_incluso": false,
-              "A_incluso": false,
-              "Per_Riferimento_ID": "",
-              "Punto_ripresa_successivo": ""
+              ]
             }
           ],
           "Determinazione_Collocazione": "relativo",
@@ -36998,8 +36896,7 @@
         },
         "custom": {},
         "createdAt": "2026-07-28T00:08:15.448Z",
-        "updatedAt": "2026-08-23T12:01:48.632Z",
-        "drafts": {}
+        "updatedAt": "2026-11-24T19:18:10.214Z"
       },
       {
         "id": "N_XIV_96_4__XIV_96_6",
@@ -39400,7 +39297,7 @@
         },
         "exactSpans": [],
         "fields": {
-          "Titolo_breve": "Rinaldo soccorre Zerbino appiedato",
+          "Titolo_breve": "Rinaldo si accorge che Zerbino è in pericolo",
           "Tipo_segmento": "",
           "Durata_genettiana": "scena",
           "Ordine_genettiano": "lineare",
@@ -39423,13 +39320,7 @@
                   "Valore": "",
                   "Unita": ""
                 }
-              ],
-              "Stima_min_quantita": [],
-              "Stima_max_quantita": [],
-              "Da_incluso": false,
-              "A_incluso": false,
-              "Per_Riferimento_ID": "",
-              "Punto_ripresa_successivo": ""
+              ]
             }
           ],
           "Determinazione_Collocazione": "relativo",
@@ -39470,8 +39361,7 @@
         },
         "custom": {},
         "createdAt": "2026-07-28T01:02:31.252Z",
-        "updatedAt": "2026-08-26T08:59:27.224Z",
-        "drafts": {}
+        "updatedAt": "2026-11-24T19:18:31.880Z"
       },
       {
         "id": "N_XVI_79_1__XVI_82_8",
@@ -43777,10 +43667,7 @@
                   "Valore": "5",
                   "Unita": "giorni"
                 }
-              ],
-              "Stima_min_quantita": [],
-              "Stima_max_quantita": [],
-              "Riferimento_incluso": false
+              ]
             }
           ],
           "Determinazione_Collocazione": "relativo",
@@ -43824,8 +43711,7 @@
         },
         "custom": {},
         "createdAt": "2026-07-28T09:37:26.549Z",
-        "updatedAt": "2026-08-31T14:35:40.414Z",
-        "drafts": {}
+        "updatedAt": "2026-11-24T15:51:54.171Z"
       },
       {
         "id": "N_XIX_37_1__XIX_37_7",
@@ -44003,7 +43889,7 @@
         },
         "exactSpans": [],
         "fields": {
-          "Titolo_breve": "Angelica e Medoro partono dal pastore",
+          "Titolo_breve": "Angelica regala il bracciale al pastore",
           "Tipo_segmento": "",
           "Durata_genettiana": "scena",
           "Ordine_genettiano": "lineare",
@@ -44029,13 +43915,7 @@
                   "Valore": "5",
                   "Unita": "giorni"
                 }
-              ],
-              "Stima_min_quantita": [],
-              "Stima_max_quantita": [],
-              "Da_incluso": false,
-              "A_incluso": false,
-              "Per_Riferimento_ID": "",
-              "Punto_ripresa_successivo": ""
+              ]
             }
           ],
           "Determinazione_Collocazione": "relativo",
@@ -44079,8 +43959,7 @@
         },
         "custom": {},
         "createdAt": "2026-07-28T09:41:44.766Z",
-        "updatedAt": "2026-08-31T14:36:45.883Z",
-        "drafts": {}
+        "updatedAt": "2026-11-24T19:18:48.397Z"
       },
       {
         "id": "N_XIX_42_1__XIX_42_7",
@@ -44611,13 +44490,7 @@
                   "Valore": "",
                   "Unita": ""
                 }
-              ],
-              "Stima_min_quantita": [],
-              "Stima_max_quantita": [],
-              "Da_incluso": false,
-              "A_incluso": false,
-              "Per_Riferimento_ID": "",
-              "Punto_ripresa_successivo": ""
+              ]
             }
           ],
           "Determinazione_Collocazione": "relativo",
@@ -44659,8 +44532,7 @@
         },
         "custom": {},
         "createdAt": "2026-07-28T10:01:13.697Z",
-        "updatedAt": "2026-08-31T14:51:08.596Z",
-        "drafts": {}
+        "updatedAt": "2026-11-24T15:52:12.953Z"
       },
       {
         "id": "N_XX_129_1__XX_129_2",
@@ -46428,7 +46300,7 @@
         },
         "exactSpans": [],
         "fields": {
-          "Titolo_breve": "Zerbino giunge sul luogo dell'uccisione di Pinabello",
+          "Titolo_breve": "Bradamante si allontana dal luogo dell'uccisione di Pinabello",
           "Tipo_segmento": "",
           "Durata_genettiana": "scena",
           "Ordine_genettiano": "lineare",
@@ -46449,13 +46321,7 @@
                   "Valore": "",
                   "Unita": ""
                 }
-              ],
-              "Stima_min_quantita": [],
-              "Stima_max_quantita": [],
-              "Da_incluso": false,
-              "A_incluso": false,
-              "Per_Riferimento_ID": "",
-              "Punto_ripresa_successivo": ""
+              ]
             }
           ],
           "Determinazione_Collocazione": "relativo",
@@ -46499,8 +46365,7 @@
         },
         "custom": {},
         "createdAt": "2026-07-28T11:09:56.315Z",
-        "updatedAt": "2026-09-26T18:45:50.508Z",
-        "drafts": {}
+        "updatedAt": "2026-11-24T19:19:42.880Z"
       },
       {
         "id": "N_XXIII_41_3__XXIII_42_8",
@@ -47357,7 +47222,7 @@
         },
         "exactSpans": [],
         "fields": {
-          "Titolo_breve": "Zerbino è messo a morte",
+          "Titolo_breve": "Zerbino viene condotto al supplizio",
           "Tipo_segmento": "",
           "Durata_genettiana": "scena",
           "Ordine_genettiano": "lineare",
@@ -47378,13 +47243,7 @@
                   "Valore": "1",
                   "Unita": "giorni"
                 }
-              ],
-              "Stima_min_quantita": [],
-              "Stima_max_quantita": [],
-              "Da_incluso": false,
-              "A_incluso": false,
-              "Per_Riferimento_ID": "",
-              "Punto_ripresa_successivo": ""
+              ]
             }
           ],
           "Determinazione_Collocazione": "relativo",
@@ -47426,8 +47285,7 @@
         },
         "custom": {},
         "createdAt": "2026-07-28T11:29:58.921Z",
-        "updatedAt": "2026-08-31T15:04:18.920Z",
-        "drafts": {}
+        "updatedAt": "2026-11-24T19:20:01.562Z"
       },
       {
         "id": "N_XX_106_5__XX_106_8",
@@ -53592,7 +53450,7 @@
         },
         "exactSpans": [],
         "fields": {
-          "Titolo_breve": "Astolfo suona il corno e mette Atlante in fuga",
+          "Titolo_breve": "Atlante fugge al suono del corno di Astolfo",
           "Tipo_segmento": "",
           "Durata_genettiana": "scena",
           "Ordine_genettiano": "lineare",
@@ -53613,13 +53471,7 @@
                   "Valore": "",
                   "Unita": ""
                 }
-              ],
-              "Stima_min_quantita": [],
-              "Stima_max_quantita": [],
-              "Da_incluso": false,
-              "A_incluso": false,
-              "Per_Riferimento_ID": "",
-              "Punto_ripresa_successivo": ""
+              ]
             }
           ],
           "Determinazione_Collocazione": "relativo",
@@ -53653,8 +53505,7 @@
         },
         "custom": {},
         "createdAt": "2026-07-28T18:39:41.421Z",
-        "updatedAt": "2026-09-18T10:14:39.156Z",
-        "drafts": {}
+        "updatedAt": "2026-11-24T19:19:18.096Z"
       },
       {
         "id": "N_XXII_20_1__XXII_21_4",
@@ -71352,13 +71203,7 @@
                   "Valore": "",
                   "Unita": ""
                 }
-              ],
-              "Stima_min_quantita": [],
-              "Stima_max_quantita": [],
-              "Da_incluso": false,
-              "A_incluso": false,
-              "Per_Riferimento_ID": "",
-              "Punto_ripresa_successivo": ""
+              ]
             }
           ],
           "Determinazione_Collocazione": "relativo",
@@ -71398,8 +71243,7 @@
         },
         "custom": {},
         "createdAt": "2026-07-31T17:04:59.216Z",
-        "updatedAt": "2026-09-26T18:47:51.279Z",
-        "drafts": {}
+        "updatedAt": "2026-11-24T17:56:26.569Z"
       },
       {
         "id": "N_XXV_5_1__XXV_6_8",
@@ -74091,13 +73935,7 @@
                   "Valore": "",
                   "Unita": ""
                 }
-              ],
-              "Stima_min_quantita": [],
-              "Stima_max_quantita": [],
-              "Da_incluso": false,
-              "A_incluso": false,
-              "Per_Riferimento_ID": "",
-              "Punto_ripresa_successivo": ""
+              ]
             },
             {
               "Riferimento_ID": "T_XXV_96_1",
@@ -74109,13 +73947,7 @@
                   "Valore": "",
                   "Unita": ""
                 }
-              ],
-              "Stima_min_quantita": [],
-              "Stima_max_quantita": [],
-              "Da_incluso": false,
-              "A_incluso": false,
-              "Per_Riferimento_ID": "",
-              "Punto_ripresa_successivo": ""
+              ]
             }
           ],
           "Determinazione_Collocazione": "relativo",
@@ -74161,8 +73993,7 @@
         },
         "custom": {},
         "createdAt": "2026-07-31T19:25:19.203Z",
-        "updatedAt": "2026-10-27T11:56:52.337Z",
-        "drafts": {}
+        "updatedAt": "2026-11-24T17:54:47.354Z"
       },
       {
         "id": "N_XXVI_70_1__XXVI_77_8",
@@ -94428,7 +94259,7 @@
         },
         "exactSpans": [],
         "fields": {
-          "Titolo_breve": "Astolfo sconfigge Branzardo e Bucifaro",
+          "Titolo_breve": "Branzardo e Bucifaro radunano le schiere contro Astolfo",
           "Tipo_segmento": "",
           "Durata_genettiana": "scena",
           "Ordine_genettiano": "lineare",
@@ -94473,7 +94304,7 @@
         },
         "custom": {},
         "createdAt": "2026-08-02T12:25:06.313Z",
-        "updatedAt": "2026-11-17T13:33:36.805Z"
+        "updatedAt": "2026-11-24T19:21:13.612Z"
       },
       {
         "id": "N_XXXVIII_36_7__XXXVIII_36_8",
@@ -96432,7 +96263,7 @@
         },
         "exactSpans": [],
         "fields": {
-          "Titolo_breve": "Duello tra Brandimarte e Rodomonte",
+          "Titolo_breve": "Brandimarte e Fiordiligi giungono al ponte di Rodomonte",
           "Tipo_segmento": "",
           "Durata_genettiana": "scena",
           "Ordine_genettiano": "lineare",
@@ -96454,13 +96285,7 @@
                   "Valore": "14",
                   "Unita": "giorni"
                 }
-              ],
-              "Stima_min_quantita": [],
-              "Stima_max_quantita": [],
-              "Da_incluso": false,
-              "A_incluso": false,
-              "Per_Riferimento_ID": "",
-              "Punto_ripresa_successivo": ""
+              ]
             }
           ],
           "Determinazione_Collocazione": "relativo",
@@ -96506,8 +96331,7 @@
         },
         "custom": {},
         "createdAt": "2026-08-02T13:24:10.526Z",
-        "updatedAt": "2026-10-27T14:28:49.269Z",
-        "drafts": {}
+        "updatedAt": "2026-11-24T19:20:30.963Z"
       },
       {
         "id": "N_XXXI_65_5__XXXI_65_8",
@@ -99605,7 +99429,7 @@
         },
         "exactSpans": [],
         "fields": {
-          "Titolo_breve": "Bradamante e Fiordiligi giungono in Arles",
+          "Titolo_breve": "Bradamante e Fiordiligi avvistano Arles",
           "Tipo_segmento": "",
           "Durata_genettiana": "scena",
           "Ordine_genettiano": "lineare",
@@ -99667,7 +99491,7 @@
         },
         "custom": {},
         "createdAt": "2026-08-02T16:01:01.319Z",
-        "updatedAt": "2026-11-24T15:02:48.774Z"
+        "updatedAt": "2026-11-24T19:20:47.562Z"
       },
       {
         "id": "N_XXXV_62_5__XXXV_62_8",
@@ -103234,7 +103058,7 @@
         },
         "custom": {},
         "createdAt": "2026-08-02T17:35:06.103Z",
-        "updatedAt": "2026-11-17T13:41:09.482Z"
+        "updatedAt": "2026-11-24T19:14:40.063Z"
       },
       {
         "id": "N_XXXIX_42_5__XXXIX_44_8",
@@ -104590,7 +104414,7 @@
         },
         "exactSpans": [],
         "fields": {
-          "Titolo_breve": "Sansonetto prende il comando di parte della flotta",
+          "Titolo_breve": "Sansonetto dispone le navi davanti a Biserta",
           "Tipo_segmento": "",
           "Durata_genettiana": "scena",
           "Ordine_genettiano": "lineare",
@@ -104653,7 +104477,7 @@
         },
         "custom": {},
         "createdAt": "2026-08-03T12:59:06.343Z",
-        "updatedAt": "2026-11-17T13:49:47.501Z"
+        "updatedAt": "2026-11-24T19:21:31.713Z"
       },
       {
         "id": "N_XL_10_1__XL_10_6",
@@ -105086,7 +104910,7 @@
         },
         "custom": {},
         "createdAt": "2026-08-03T13:15:28.354Z",
-        "updatedAt": "2026-11-17T14:38:51.171Z"
+        "updatedAt": "2026-11-24T19:21:49.112Z"
       },
       {
         "id": "N_XL_46_1__XL_55_2",
@@ -113184,7 +113008,7 @@
         },
         "exactSpans": [],
         "fields": {
-          "Titolo_breve": "Astolfo vola da Biserta alla Provenza",
+          "Titolo_breve": "Astolfo termina i preparativi prima di lasciare l'Africa",
           "Tipo_segmento": "",
           "Durata_genettiana": "sommario",
           "Ordine_genettiano": "lineare",
@@ -113209,10 +113033,7 @@
                   "Valore": "",
                   "Unita": ""
                 }
-              ],
-              "Stima_min_quantita": [],
-              "Stima_max_quantita": [],
-              "Riferimento_incluso": false
+              ]
             }
           ],
           "Determinazione_Collocazione": "relativo",
@@ -113253,8 +113074,7 @@
         },
         "custom": {},
         "createdAt": "2026-08-03T17:30:35.863Z",
-        "updatedAt": "2026-09-26T19:50:10.227Z",
-        "drafts": {}
+        "updatedAt": "2026-11-24T19:22:31.280Z"
       },
       {
         "id": "N_XLIV_23_8__XLIV_24_8",
@@ -124579,7 +124399,7 @@
         },
         "custom": {},
         "createdAt": "2026-08-21T14:17:46.637Z",
-        "updatedAt": "2026-11-24T15:22:09.567Z"
+        "updatedAt": "2026-11-24T15:25:25.947Z"
       },
       {
         "id": "N_X_83_6__X_84_4",
@@ -125450,67 +125270,6 @@
         "createdAt": "2026-10-27T11:59:10.051Z",
         "updatedAt": "2026-10-27T12:00:01.603Z",
         "drafts": {}
-      },
-      {
-        "id": "N_XLV_2_1__XLV_2_1",
-        "category": "narrative",
-        "range": {
-          "start": {
-            "c": 45,
-            "o": 2,
-            "v": 1,
-            "ch": 0
-          },
-          "end": {
-            "c": 45,
-            "o": 2,
-            "v": 1,
-            "ch": 39
-          }
-        },
-        "exactSpans": [],
-        "fields": {
-          "Titolo_breve": "",
-          "Tipo_segmento": "",
-          "Durata_genettiana": "scena",
-          "Ordine_genettiano": "lineare",
-          "Frequenza_genettiana": "singolativa",
-          "Personaggi_in_scena": [],
-          "Descrizione": "",
-          "Note": "",
-          "da_mostrare": [],
-          "primo_ordine": "",
-          "connessione_boiardo": [],
-          "personaggio_incongruente": [],
-          "riferimento_contraddizione": "",
-          "aggancio_contraddizione": [],
-          "secondo_titolo": "",
-          "certezza_cronologia": "",
-          "Determinazioni_temporali": [],
-          "Determinazione_Collocazione": "relativo",
-          "Determinazione_Estensione": "puntuale",
-          "Determinazione_Quantificazione": "determinato",
-          "Determinazione_coordinata_temporale": false,
-          "Tempi_secondari": [],
-          "Successioni_temporali": [],
-          "Segmento_successione_riferimento": "",
-          "Relazione_successione": "",
-          "Contraddizione_temporale": false,
-          "Contraddizioni_tempi": [],
-          "Contraddizione_tempo_principale_ID": "",
-          "Nota_contraddizione": "",
-          "Ripresa_narrativa": false,
-          "Riprende_segmenti_ID": [],
-          "Tipo_raccordo_ripresa": "",
-          "Nota_ripresa": "",
-          "Coordinate_spaziali": [],
-          "Luoghi_secondari": [],
-          "Incompleta": false,
-          "Nota_incompletezza": ""
-        },
-        "custom": {},
-        "createdAt": "2026-11-24T11:21:38.589Z",
-        "updatedAt": "2026-11-24T14:59:57.276Z"
       }
     ],
     "time": [
