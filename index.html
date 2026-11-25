@@ -968,6 +968,53 @@ body > header .armorDecorRepeats::after,
 </section>
 </aside>
 <div class="infoBackdrop" id="infoBackdrop" aria-hidden="true"></div>
+<style id="info-editorial-structure-v150">
+/* Soltanto il pannello Informazioni: gerarchia editoriale delle nuove parti. */
+#info-metodologia a[href^="#info-"]{color:#25495f;text-decoration-thickness:1px;text-underline-offset:3px}
+.infoToc>ol{list-style:none;padding-left:0}
+.infoToc .tocPart{margin:14px 0 4px;color:#324a5a;font-weight:700;font-size:12.5px;line-height:1.35}
+.infoToc .tocPart:first-child{margin-top:6px}
+.infoToc .tocPart>a{color:#173b58}
+.infoToc .tocSub{list-style:none;margin:5px 0 8px;padding-left:11px;border-left:1px solid #d8e0e4}
+.infoToc .tocSub li{margin:5px 0;font-size:11.5px;font-weight:400}
+.infoGuideContent .infoChapter{scroll-margin-top:18px;border-bottom:1px solid #cfd7da;padding:0 0 31px;margin:0 0 33px}
+.infoGuideContent .infoChapter>h3{margin:0 0 17px;font-size:24px}
+.infoGuideContent .infoChapter>.infoSubsection{scroll-margin-top:18px;border-bottom:0;margin:0 0 23px;padding:0}
+.infoGuideContent .infoChapter>.infoSubsection:last-child{margin-bottom:0}
+.infoGuideContent .infoChapter>.infoSubsection+.infoSubsection{padding-top:19px;border-top:1px solid #e2e6e8}
+.infoGuideContent h4.infoSubheading{margin:0 0 11px;color:#25495f;font:500 19px/1.32 Georgia,"Times New Roman",serif;text-transform:none;letter-spacing:0}
+.infoGuideContent .infoSubsection h5{margin:21px 0 8px;font:700 11.5px/1.35 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;letter-spacing:.06em;text-transform:uppercase;color:#425865}
+.infoGuideContent .infoFeature h5,.infoGuideContent .infoStructure h5,.infoGuideContent .infoEllipsesNote h5{margin:0 0 7px;font-size:11.5px}
+.infoGuideContent .infoLead{font-size:16px;line-height:1.65;color:#30434f}
+.infoGuideContent .infoChronology{margin:13px 0 17px;border-top:1px solid #dfe4e6;border-bottom:1px solid #dfe4e6}
+.infoGuideContent .infoChronologyRow{display:grid;grid-template-columns:minmax(150px,190px) 1fr;gap:8px 17px;padding:8px 0;border-bottom:1px solid #edf0f1;font-size:14px;line-height:1.5}
+.infoGuideContent .infoChronologyRow:last-child{border-bottom:none}
+.infoGuideContent .infoChronologyRow strong{color:#29495e}
+.infoGuideContent .infoResearchNote{font-size:13.5px;color:#52636e;line-height:1.55}
+@media(max-width:650px){
+ .infoToc .tocPart{margin-top:11px}
+ .infoGuideContent .infoChapter>h3{font-size:22px}
+ .infoGuideContent h4.infoSubheading{font-size:18px}
+ .infoGuideContent .infoChronologyRow{grid-template-columns:1fr;gap:2px}
+}
+
+/* Bibliografia: voci leggibili con rientro sporgente, senza intervenire sul resto del sito. */
+#info-bibliografia .infoBibliography{list-style:none;margin:12px 0 18px;padding:0}
+#info-bibliografia .infoBibliography li{margin:0 0 11px;padding-left:1.35em;text-indent:-1.35em;line-height:1.62;overflow-wrap:break-word}
+#info-bibliografia .infoBibliography li:last-child{margin-bottom:0}
+#info-bibliografia .infoBibSource{margin:14px 0 18px}
+#info-bibliografia .infoBibNote{font-size:13.5px;line-height:1.55;color:#52636e}
+#info-bibliografia a{color:#25495f;text-decoration-thickness:1px;text-underline-offset:3px;overflow-wrap:anywhere}
+
+/* Presentazione del corpus e dei singoli casi di incongruenza. */
+#info-progetto{scroll-margin-top:18px;padding:0 0 17px;margin-bottom:27px;border-bottom:1px solid #e2e6e8}
+#info-progetto p{margin:0 0 13px}
+#info-progetto p:last-child{margin-bottom:0}
+#info-contraddizioni .infoDiscrepancy{scroll-margin-top:18px;padding:10px 0 13px;border-bottom:1px solid #e2e6e8}
+#info-contraddizioni .infoDiscrepancy:last-of-type{margin-bottom:15px}
+#info-contraddizioni .infoDiscrepancy h5{font-size:12.5px;letter-spacing:0;text-transform:none;color:#25495f;margin:6px 0 8px;line-height:1.5}
+#info-contraddizioni .infoDiscrepancy p{margin:0;line-height:1.68}
+</style>
 <aside class="infoDrawer" id="infoDrawer" aria-labelledby="infoDrawerTitle" aria-hidden="true">
   <div class="infoDrawerHeader"><span class="armorDecorLayer" aria-hidden="true"><span class="armorDecorRepeats" aria-hidden="true"></span><span class="armorDecorFullFrame" aria-hidden="true"></span></span>
     <div><h2 id="infoDrawerTitle">Atlante cronologico del <em>Furioso</em></h2><p>Guida alla lettura e all'interpretazione</p></div>
@@ -975,171 +1022,235 @@ body > header .armorDecorRepeats::after,
   </div>
   <div class="infoDrawerBody">
     <div class="infoGuideLayout">
-      <nav class="infoToc" id="info-index" aria-label="Indice delle informazioni">
-        <h3>Indice</h3>
-        <ol>
-          <li><a href="#info-progetto">L'Atlante cronologico</a></li>
-          <li><a href="#info-grafico">Come leggere il grafico</a></li>
-          <li><a href="#info-impostazioni">Impostazioni</a>
-            <ol class="tocSub">
-              <li><a href="#info-personaggi">Scelta dei personaggi</a></li>
-              <li><a href="#info-rappresentazione">Rappresentazione dei segmenti</a></li>
-              <li><a href="#info-canti">Scelta dei canti</a></li>
-              <li><a href="#info-tempo">Scelta del tempo</a></li>
-            </ol>
-          </li>
-          <li><a href="#info-intreccio">Livelli di analisi</a></li>
-          <li><a href="#info-legenda-superiore">Legenda superiore</a></li>
-          <li><a href="#info-testo">Il pannello del testo</a></li>
-          <li><a href="#info-legenda-personaggi">Legenda dei personaggi</a></li>
-          <li><a href="#info-crediti">Crediti</a></li>
-          <li><a href="#info-licenze">Licenze</a></li>
-        </ol>
-      </nav>
-
+<nav class="infoToc" id="info-index" aria-label="Indice delle informazioni">
+  <h3>Indice</h3>
+  <ol>
+    <li class="tocPart"><a href="#info-introduzione">1. Introduzione</a></li>
+    <li class="tocPart"><a href="#info-metodologia">2. Metodologia</a></li>
+    <li class="tocPart"><a href="#info-atlante">3. L’Atlante</a>
+      <ol class="tocSub">
+        <li><a href="#info-progetto">Il progetto e il corpus annotato</a></li>
+        <li><a href="#info-grafico">Il grafico principale</a></li>
+        <li><a href="#info-intreccio">I livelli di analisi</a></li>
+        <li><a href="#info-ellissi">Sospensioni ed ellissi</a></li>
+        <li><a href="#info-testo">Il pannello di lettura</a></li>
+      </ol>
+    </li>
+    <li class="tocPart"><a href="#info-interpretazione">4. Ricostruzione cronologica</a>
+      <ol class="tocSub">
+        <li><a href="#info-coordinate">Le sei coordinate e i raccordi</a></li>
+        <li><a href="#info-ancoraggio">L’ancoraggio calendariale</a></li>
+        <li><a href="#info-soglie">Le coordinate intermedie</a></li>
+        <li><a href="#info-campate">I quattro raggruppamenti</a></li>
+        <li><a href="#info-contraddizioni">Le dieci incongruenze temporali</a></li>
+      </ol>
+    </li>
+    <li class="tocPart"><a href="#info-bibliografia">5. Bibliografia minima</a></li>
+    <li class="tocPart"><a href="#info-crediti">6. Crediti e licenze</a></li>
+  </ol>
+</nav>
       <div class="infoGuideContent">
-        <section id="info-progetto">
-          <h3>1. L'Atlante cronologico</h3>
-          <p>L’<em>Atlante cronologico del Furioso</em> è una visualizzazione interattiva dedicata alla struttura narrativa e alla cronologia interna dell’<em>Orlando furioso</em>. Il grafico mette in relazione due dimensioni distinte: l’<strong>ordine del racconto</strong>, ossia la successione e l’estensione dei passi nel testo, e il <strong>tempo della storia</strong>, ossia la collocazione e la durata ricostruite degli eventi narrati. Consente così di riconoscere continuità, simultaneità, scarti cronologici, interruzioni e riprese delle diverse linee narrative.</p>
-          <p>L’Atlante nasce da un’<strong>annotazione manuale dell’intero poema</strong>, articolata in 1.289 unità narrative e riferita a 77 personaggi, e utilizza i dati relativi alle unità, alle espressioni temporali e agli stacchi narrativi. La ricostruzione cronologica combina indicazioni esplicite, rapporti di anteriorità, posteriorità e simultaneità e, dove il testo non consente una determinazione univoca, ipotesi motivate: <strong>le date mostrate non hanno tutte lo stesso grado di certezza</strong>.</p>
-          <p>L’annotazione riguarda principalmente il <strong>presente della storia</strong>: gli eventi narrati in analessi o prolessi e i racconti di secondo grado non sono rappresentati come unità autonome della cronologia principale. Questi passi restano comunque consultabili nel testo del poema. I dataset utilizzati dalla visualizzazione possono essere scaricati mediante <strong>Esporta dati</strong>.</p>
-        </section>
+<section class="infoChapter" id="info-introduzione">
+  <h3>1. Introduzione</h3>
+  <p>Il modello narrativo dell’<em>Orlando furioso</em> adotta la tecnica dell’<em>entrelacement</em>, derivata dai romanzi francesi medievali in prosa e fatta propria da Boiardo, che consiste nell’intreccio di più linee narrative autonome, continuamente alternate mediante il passaggio dall’una all’altra. Tale struttura, già al centro del dibattito cinquecentesco tra apologisti e critici neoaristotelici, è stata oggetto nel secolo scorso degli studi di Pampaloni, Brand, Weaver, Dalla Palma e Zatti. Si deve però a Marco Praloran il merito di avere collegato l’analisi dell’<em>entrelacement</em> al problema della temporalità narrativa: secondo la sua lettura, gli stacchi tra le diverse voci del racconto produrrebbero un effetto di illusionismo temporale per cui lo sviluppo degli eventi, percepito inizialmente come simultaneo e cronologicamente coerente, rivelerebbe al momento della ricongiunzione dei fili narrativi il carattere elastico della propria costruzione temporale.</p>
+  <p>Anche al di là delle specifiche conclusioni di Praloran, o talvolta proprio a partire da esse, la temporalità del <em>Furioso</em> è stata frequentemente avvertita dalla critica ariostesca come un nodo problematico. Studiosi diversi ne hanno sottolineato, di volta in volta, l’incertezza cronologica, la difficoltà di misurazione e l’effetto di disorientamento imposto al lettore: così, a titolo di esempio, Weaver, Parker, Montagnani, Barlusconi, Izzo, Tomasi e Sangirardi. Nonostante il vasto interesse suscitato dal problema, manca ancora una ricognizione sistematica della cronologia interna dell’intero poema che consenta di verificare la consistenza di tali giudizi. Del resto, se il <em>Furioso</em> si presenta come un organismo narrativo dotato di una straordinaria coerenza costruttiva, è lecito chiedersi se anche la sua temporalità possa rispondere a principi di organizzazione più riconoscibili di quanto l’esperienza della lettura lasci immediatamente percepire.</p>
+  <p>Da questi interrogativi ha preso avvio una ricerca volta a ricostruire la cronologia interna dell’<em>Orlando furioso</em>, attraverso l’annotazione del testo dell'intero poema, l’individuazione dei rapporti temporali fra le diverse linee narrative e l’analisi della loro organizzazione complessiva. Uno degli esiti di questo lavoro è l’<strong><em>Atlante cronologico del Furioso</em></strong>, qui presentato, che attraverso una visualizzazione interattiva mette in relazione l’ordine del racconto con il tempo della storia e consente di esplorare le traiettorie narrative dei personaggi, la successione e la contemporaneità di vicende esposte a distanza, nonché le sospensioni e i ricongiungimenti dei diversi fili dell’intreccio.</p>
+  <Più>Il progetto apre anche a nuove prospettive di ricerca nell’ambito delle <em>Digital Humanities</em>. Il corpus annotato per la costruzione dell’<em>Atlante</em> offre infatti una base di confronto per verificare in quale misura l’uso di <em>Large Language Models</em> possa assistere o parzialmente automatizzare le procedure fin qui svolte manualmente, dall’individuazione delle unità narrative al riconoscimento delle relazioni temporali e dei fenomeni più complessi dell’<em>entrelacement</em>, nell’ottica di una futura estensione del metodo a un più vasto insieme di opere, che comprenda i romanzi cavallereschi in ottava rima sino ai poemi epici ed eroici del Cinquecento. Più ambiziosamente, infine, metodi quantitativi e computazionali potrebbero essere impiegati per indagare i processi compositivi attraverso cui Ariosto sia riuscito a costruire e governare la complessa «macchina» narrativa del poema e per contribuire allo studio, ancora aperto, della genesi creativa dell’<em>Orlando furioso</em>.</p>
+</section>
+<section class="infoChapter" id="info-metodologia">
+  <h3>2. Metodologia</h3>
+  <p>L’annotazione manuale dei quarantasei canti dell’<em>Orlando furioso</em> è stata condotta attraverso la suddivisione del testo in unità narrative, individuate sulla base della continuità temporale, dei personaggi coinvolti e dello spazio in cui si svolge l’azione; l’estensione delle unità è dunque variabile e non coincide necessariamente con i confini dell’ottava. Per ciascuna di esse sono stati registrati un titolo identificativo, gli estremi testuali, i personaggi presenti e due attributi narratologici, definiti secondo le categorie di Gérard Genette: la durata (<em>scena</em> o <em>sommario</em>) e la frequenza (<em>singolativa</em> o <em>iterativa</em>). Alla segmentazione del poema si è affiancata l’annotazione delle espressioni temporali, distinte in puntuali e durative e poste, ove necessario, in rapporti di equivalenza o inclusione. A partire da queste indicazioni e dalle relazioni temporali ricavabili fra le diverse vicende, è stata quindi ricostruita la collocazione cronologica delle singole unità narrative, stabilendone i rapporti di anteriorità, posteriorità o inclusione e quantificando, quando possibile, gli intervalli corrispondenti.</p>
+  <p>L’annotazione ha preso in esame anche le articolazioni dell’intreccio, individuando sia gli stacchi narrativi, mediante i quali il narratore sospende una vicenda per rivolgere il racconto a un’altra, sia i ricongiungimenti, in cui una linea narrativa riconduce il racconto a una situazione già rappresentata o anticipata attraverso un diverso filo dell’intreccio, spesso rovesciando la prospettiva iniziale e rivelando l’identità di personaggi introdotti precedentemente in forma anonima. L’indagine è stata poi estesa ai rapporti di continuità con l’<em>Inamoramento de Orlando</em>, registrando la prima comparsa nel <em>Furioso</em> dei personaggi ereditati dal poema precedente e i passi nei quali vengono ricostruite le vicende intercorse dalla loro ultima apparizione boiardesca. Infine, sono state considerate le aggiunte narrative introdotte nella redazione del 1532.</p>
+  <p>È opportuno precisare che il perimetro dell’annotazione è stato circoscritto agli eventi appartenenti al presente della storia, mentre non sono stati inclusi i fatti evocati in analessi o anticipati in prolessi, né quelli compresi nei racconti di secondo grado, collocati a un livello narrativo metadiegetico, benché le informazioni temporali ricavabili da questi passi possano, quando pertinenti, essere tenute in considerazione per la determinazione cronologica degli eventi del racconto primo.</p>
+  <p>In riferimento alla ricostruzione cronologica, quando il poema offre indicazioni temporali precise, ci si è attenuti il più fedelmente possibile ai dati testuali; nei numerosi casi in cui permangono invece margini di indeterminatezza, la collocazione dei singoli eventi o la durata dei sommari vengono definite per via congetturale, secondo soluzioni compatibili con i vincoli posti dal testo e con i rapporti cronologici ricavabili dalle altre linee narrative.</p>
+  <p>Inoltre, quando i sommari comprendono uno spostamento all’interno della geografia reale, al percorso è stata attribuita, per quanto possibile, una durata plausibile sulla base dei tempi di percorrenza storicamente documentati per i tragitti via terra e via mare fra il tardo Medioevo e il Cinquecento, prendendo a riferimento le modalità di viaggio coeve ad Ariosto e ai suoi primi lettori, ritenute più adatte ai fini della ricostruzione cronologica rispetto a quelle dell’età carolingia in cui l’azione è ambientata. Sono stati esclusi da questo criterio, da un lato, i casi riconducibili al meraviglioso e al fantastico (per esempio gli spostamenti compiuti per mezzo dell’ippogrifo, del carro di Elia o di cavalcature straordinarie come Baiardo e Rabicano) e, dall’altro, quelli in cui, anche in assenza di elementi soprannaturali, la stessa scansione temporale fornita dal testo imponga tempi di percorrenza eccezionalmente rapidi: in tali circostanze, gli scarti rispetto ai parametri storici non vengono corretti nella ricostruzione, ma mantenuti come dati della temporalità ariostesca.</p>
+  <p>Per quanto riguarda poi la traduzione delle relazioni temporali in date calendariali, anziché tentare di ricondurre la cronologia del poema a una precisa successione di anni storicamente databili, essa è stata articolata in annualità numerate in cifre romane (I, II, III), assumendo per ciascuna una durata di 365 giorni, senza anni bisestili. Le date fanno riferimento al calendario giuliano, in uso nell’età di Ariosto. La loro assegnazione risponde all’esigenza di rendere perspicua, misurabile e confrontabile la collocazione degli eventi nel tempo della storia, senza tuttavia che si attribuisca loro un valore di esattezza cronologica assoluta; in particolare, quando il testo non fornisce indicazioni temporali stringenti, le date proposte non intendono fissare un’unica soluzione possibile, bensì individuare una collocazione plausibile entro l’intervallo ammesso dalla narrazione.</p>
+  <p>Rispetto, infine, alle indicazioni stagionali e meteorologiche presenti nel <em>Furioso</em>, ai fini della ricostruzione è stato attribuito loro un valore indiziario inferiore a quello delle determinazioni temporali esplicite che scandiscono il trascorrere del tempo. Tale cautela deriva sia dal fatto che nel testo poetico questi elementi concorrono spesso alla caratterizzazione letteraria e simbolica del paesaggio attraverso moduli topici, e non sempre costituiscono quindi indicatori cronologici affidabili, sia, soprattutto, dalla difficoltà di ricostruire con precisione il quadro climatico familiare ad Ariosto e verosimilmente sotteso alla rappresentazione del poema: una verifica sistematica richiederebbe infatti indagini specifiche sulla documentazione cinquecentesca in materia, che esulano dai confini della ricerca qui presentata.</p>
+</section>
 
-        <section id="info-grafico">
-          <h3>2. Come leggere il grafico principale</h3>
-          <h4>I due assi</h4>
-          <p><strong>Ordine del racconto:</strong> segue la successione delle unità narrative nel poema. Con lo zoom si passa dai canti alle singole ottave e ai versi.</p>
-          <p><strong>Tempo della storia:</strong> colloca gli eventi nella cronologia ricostruita, mostrando date e riferimenti temporali con un dettaglio crescente all’aumentare dello zoom. I due assi possono essere <strong>scambiati di posizione</strong> con il pulsante raffigurante due frecce nell’angolo del grafico.</p>
-          <h4>Che cosa rappresenta una tacca</h4>
-          <p>Ogni tacca rettangolare corrisponde a un’<strong>unità narrativa</strong> (o segmento narrativo). La sua estensione lungo l’asse del racconto è proporzionale ai versi occupati; lungo l’asse della storia individua un momento o, per le unità durative, un intervallo. La posizione reciproca delle tacche permette di confrontare l’ordine in cui gli eventi sono raccontati con quello in cui si svolgono.</p>
-          <div class="infoMiniKey"><span><i></i> un personaggio attivo</span><span><i class="multi"></i> più personaggi attivi</span><span><i class="dim"></i> contesto non selezionato</span><span><i class="break"></i> salto fra intervalli</span></div>
-          <p>Il <strong>colore</strong> identifica il personaggio. Quando nella stessa unità compaiono più personaggi selezionati, la tacca è divisa in fasce cromatiche di uguale ampiezza, ordinate alfabeticamente. Gli elementi di contesto non inclusi nella selezione risultano attenuati; i segni di interruzione sugli assi indicano l’accostamento di intervalli non contigui selezionati attraverso i filtri.</p>
-          <h4>Passaggio del mouse, clic e confronti</h4>
-          <ul>
-            <li><strong>Passaggio del mouse:</strong> evidenzia l’unità e apre un riquadro informativo con titolo, estremi testuali, personaggi, collocazione cronologica e, se disponibili, determinazioni ed espressioni temporali. Il riquadro può segnalare anche intervalli di incertezza e informazioni cronologiche alternative.</li>
-            <li><strong>Clic su una tacca:</strong> seleziona l’unità, mantiene il collegamento con il grafico e apre il <strong>Testo del poema</strong> sul passo corrispondente. Un nuovo clic sulla tacca già selezionata ne rimuove la selezione. Durante una selezione, i riquadri degli altri segmenti riportano anche la <strong>distanza testuale e temporale</strong> rispetto al passo di riferimento, quando calcolabile.</li>
-            <li><strong>Riferimenti sugli assi:</strong> al passaggio del cursore si evidenziano le rispettive guide, utili per verificare allineamenti e coincidenze. Un clic su alcuni riferimenti (come i canti e le coordinate temporali principali) permette di fissarne l’evidenziazione; un secondo clic la rimuove.</li>
-          </ul>
-          <h4>Zoom e spostamento</h4>
-          <p>La rotella del mouse o il gesto verticale del touchpad regolano lo <strong>zoom</strong> all’interno del grafico; il trascinamento ne sposta la porzione visibile. Quando necessario, è possibile usare anche i <strong>cursori lungo gli assi</strong>. Il gesto orizzontale del touchpad permette di scorrere lungo l’asse corrispondente. Un <strong>doppio clic</strong> ripristina la vista complessiva della selezione corrente, senza annullare i filtri applicati.</p>
-        </section>
+<section class="infoChapter" id="info-atlante">
+  <h3>3. L’Atlante</h3>
 
-        <section id="info-impostazioni">
-          <h3>3. Impostazioni</h3>
-          <p>Il pannello <strong>Impostazioni</strong> consente di scegliere i personaggi, i livelli di analisi e la rappresentazione delle unità narrative, nonché di limitare la visualizzazione a uno o più intervalli del poema o della cronologia. I filtri determinano le unità visualizzate nel grafico e i passi proposti dalla ricerca del lettore; il testo integrale rimane consultabile.</p>
+  <div id="info-progetto" class="infoAtlasOverview">
+    <p>L’<em>Atlante cronologico del Furioso</em> traduce in una visualizzazione interattiva i risultati dell’annotazione e della ricostruzione cronologica del poema, restituendo in forma grafica la disposizione delle unità narrative nell’ordine del racconto e la loro collocazione nel tempo della storia. Alla base della visualizzazione si trova un corpus che comprende 1.289 unità narrative relative a 77 personaggi, 514 espressioni temporali, 117 stacchi narrativi, 14 ricongiungimenti e 10 incongruenze temporali. I dati raccolti sono resi disponibili in tre dataset in formato Excel, scaricabili insieme alla relativa documentazione attraverso il comando <strong>Esporta dati</strong>, situato nella barra superiore del sito.</p>
+  </div>
 
-          <h4 id="info-personaggi">Scelta dei personaggi</h4>
-          <ul>
-            <li><strong>Scegli personaggi:</strong> apre l’elenco, nel quale è possibile cercare un nome. Il numero accanto a ciascun personaggio indica le unità narrative a lui associate.</li>
-            <li><strong>Casella di selezione:</strong> include o esclude il personaggio dal grafico. Il <strong>controllo del colore</strong> ne permette la personalizzazione.</li>
-            <li><strong>Principali:</strong> seleziona i sei personaggi principali predefiniti; <strong>Tutti:</strong> include tutti i personaggi; <strong>Azzera:</strong> svuota la selezione; <strong>Reset colori:</strong> ripristina i colori originari.</li>
-          </ul>
+  <section class="infoSubsection" id="info-grafico">
+    <h4 class="infoSubheading">3.1. Il grafico principale</h4>
+    <p>Nel grafico principale dell’<em>Atlante</em> si dispongono le <strong>unità narrative</strong> individuate nell’annotazione. A ciascuna unità narrativa corrisponde una <strong>tacca rettangolare</strong>, la cui posizione ed estensione assumono un significato diverso sui due assi: sull’<strong>asse della narrazione</strong>, la tacca indica il punto del poema in cui l’unità è collocata e ha un’ampiezza proporzionale alla sua estensione testuale; sull’<strong>asse della storia</strong>, essa ne restituisce invece la collocazione cronologica, rappresentando gli eventi puntuali con un’estensione circoscritta alla loro coordinata temporale e quelli durativi con un’estensione corrispondente all’intervallo di tempo interessato.</p>
+    <p>Passando il cursore su una tacca compare un <strong>riquadro informativo</strong> che riporta il titolo dell’unità narrativa, la sua collocazione cronologica e le indicazioni temporali a essa collegate. Ogni tacca rappresenta inoltre i personaggi che compaiono nell’unità narrativa, poiché a ciascuno di essi è associato un colore nella <strong>legenda sottostante al grafico</strong>; quando più di un personaggio compare nella stessa unità narrativa, la tacca viene suddivisa in fasce cromatiche di uguale ampiezza. Dalla legenda è anche possibile isolare la linea narrativa di un singolo personaggio, per seguirne la continuità nel testo e lo sviluppo nella cronologia.</p>
+    <p>Il livello di dettaglio del grafico può infine essere modificato mediante lo <strong>zoom</strong>, che sull’asse della narrazione consente di passare dalla visualizzazione per canti a quella per ottave e singoli versi, mentre sull’asse della storia rende progressivamente più fitte le date e le coordinate temporali mostrate. Il pannello delle <strong>Impostazioni</strong> consente inoltre di circoscrivere direttamente il grafico a determinati intervalli del poema o della cronologia, nonché di scegliere i personaggi da visualizzare.</p>
+  </section>
 
-          <h4 id="info-rappresentazione">Rappresentazione dei segmenti</h4>
-          <ul>
-            <li><strong>Tutti:</strong> mostra tutte le unità che comprendono almeno uno dei personaggi selezionati.</li>
-            <li><strong>Scene:</strong> limita la visualizzazione alle unità in cui il tempo del racconto e quello degli eventi procedono a un ritmo approssimativamente equivalente.</li>
-            <li><strong>Sommari:</strong> mostra le unità nelle quali un intervallo più ampio del tempo della storia viene condensato in uno spazio testuale relativamente breve.</li>
-            <li><strong>Monocromia:</strong> sostituisce i colori associati ai personaggi con un unico colore, personalizzabile mediante il controllo che compare quando l’opzione è attiva.</li>
-          </ul>
+  <section class="infoSubsection" id="info-intreccio">
+    <h4 class="infoSubheading">3.2. I livelli di analisi</h4>
+    <p>Al grafico principale si affiancano diversi <strong>livelli di analisi</strong>, selezionabili dal pannello delle impostazioni, attraverso i quali è possibile mettere in evidenza specifici aspetti della struttura narrativa e cronologica del poema.</p>
 
-          <h4 id="info-canti">Scelta dei canti</h4>
-          <p>Ogni riga permette di delimitare un intervallo mediante <strong>canto e ottava iniziali</strong> e <strong>canto e ottava finali</strong>. Se si indicano soltanto i canti, vengono incluse tutte le ottave comprese; se, per uno stesso canto, si indica soltanto un’ottava, viene selezionata quella singola ottava.</p>
-          <p><strong>＋ Intervallo</strong> aggiunge una nuova selezione, così da confrontare anche passi non contigui; gli intervalli sovrapposti o consecutivi vengono riuniti. <strong>Applica</strong> aggiorna la visualizzazione e <strong>Reset</strong> ripristina l’intero poema. Le discontinuità tra intervalli distinti sono segnalate sull’asse del racconto.</p>
+    <h5>Ordine narrativo e tempo della storia</h5>
+    <p>Il livello attivo per impostazione predefinita rappresenta il rapporto fra ordine narrativo e tempo della storia mediante un <strong>diagramma di Sankey</strong>. Qui, anziché disporre le due dimensioni ortogonalmente come nel grafico principale, l’andamento e gli incroci dei flussi permettono di osservare con immediatezza gli scarti e le inversioni fra successione testuale e successione cronologica. Il passaggio del cursore su una banda evidenzia la corrispondente unità narrativa nel grafico principale e apre un riquadro che riporta il titolo dell’unità, la sua posizione nel poema, la sua collocazione nella cronologia interna e i personaggi coinvolti.</p>
 
-          <h4 id="info-tempo">Scelta del tempo</h4>
-          <p>Ogni riga definisce un intervallo della cronologia ricostruita attraverso un <strong>tempo iniziale</strong> e un <strong>tempo finale</strong>. I menu riportano la data e, quando disponibile, la denominazione del riferimento temporale. Entrambi gli estremi sono inclusi nella selezione.</p>
-          <p>Con <strong>＋ Intervallo</strong> si possono combinare fasce cronologiche distinte. <strong>Applica</strong> aggiorna il grafico, mentre <strong>Reset</strong> ripristina la cronologia completa. Le fasce non consecutive sono accostate nella visualizzazione e segnalate da appositi segni di discontinuità sull’asse della storia. I filtri per testo e per tempo possono essere combinati.</p>
-        </section>
+    <h5>Ricongiungimenti narrativi</h5>
+    <p>I <strong>ricongiungimenti narrativi</strong> sono invece rappresentati mediante <strong>archi orientati</strong> che collegano due unità nelle quali uno stesso snodo della storia viene riproposto in punti diversi della narrazione. L’estremo iniziale e quello finale dell’arco distinguono rispettivamente l’unità narrativa nella quale la situazione compare per la prima volta e quella nella quale il racconto vi ritorna attraverso il successivo sviluppo dell’intreccio: così, l’ampiezza dell’arco rende percepibile la distanza che separa le due unità nell’ordine del racconto. Al passaggio del cursore, le due tacche corrispondenti nel grafico principale vengono evidenziate e collegate da un segmento. Un riquadro informativo indica infine gli estremi testuali del ricongiungimento e i personaggi coinvolti; con un clic, la selezione rimane fissata.</p>
 
-        <section id="info-intreccio">
-          <h3>4. Livelli di analisi</h3>
-          <p>I sei livelli principali consentono di osservare aspetti diversi della <strong>struttura narrativa e cronologica</strong> del poema. In condizioni normali si seleziona un livello alla volta; attivando <strong>Sovrapponi livelli</strong> è possibile visualizzarne più di uno contemporaneamente e conservare il riferimento ai rispettivi elementi. Le <strong>sospensioni narrative</strong> e le <strong>ellissi temporali</strong> costituiscono due visualizzazioni aggiuntive, attivabili indipendentemente.</p>
-          <div class="infoStructureGrid">
-            <div class="infoStructure">
-              <h4>Ordine narrativo e tempo della storia</h4>
-              <p>Un <strong>diagramma di Sankey</strong> mette in corrispondenza la posizione delle unità nel <strong>POEMA</strong> con la loro collocazione nel <strong>TEMPO</strong>. L’andamento e gli incroci dei collegamenti rendono visibili gli scarti e le inversioni tra successione testuale e successione cronologica. Le bande hanno ampiezza proporzionale all’estensione del segmento; il passaggio del cursore evidenzia l’unità nel grafico principale e il clic ne apre il passo nel lettore.</p>
-            </div>
-            <div class="infoStructure">
-              <h4>Ricongiungimenti narrativi</h4>
-              <p>Gli <strong>archi orientati</strong> uniscono due unità nelle quali una situazione narrativa compare una prima volta e viene poi raggiunta nuovamente attraverso lo sviluppo di un altro filo dell’intreccio. L’ampiezza dell’arco ne rende percepibile la distanza nel racconto. Al passaggio del mouse, le due tacche e il collegamento risaltano nel grafico principale; un <strong>clic</strong> mantiene fissato il ricongiungimento, mentre un secondo clic lo deseleziona.</p>
-            </div>
-            <div class="infoStructure">
-              <h4>Stacchi narrativi</h4>
-              <p>Ciascun <strong>punto</strong> individua il passaggio da una linea narrativa a un’altra, all’interno di un canto o tra due canti. Il passaggio del cursore mostra la posizione dello stacco e due guide cronologiche nel grafico: <strong>1</strong> alla conclusione dell’unità precedente e <strong>2</strong> all’inizio di quella successiva. La loro disposizione consente di distinguere un avanzamento da un arretramento cronologico. Con un clic l’evidenziazione rimane fissata.</p>
-            </div>
-            <div class="infoStructure">
-              <h4>Connessioni narrative con Boiardo</h4>
-              <p>I <strong>punti</strong> rappresentano le prime comparse nel <em>Furioso</em> dei personaggi provenienti dall’<em>Inamoramento de Orlando</em> per i quali Ariosto fornisce un raccordo narrativo, secondo le unità esplicitamente associate nell’annotazione. Non si considerano le menzioni retrospettive in analessi (come per Mandricardo e Bardino); per i personaggi inizialmente presenti ma non identificati (come Marfisa, Malagigi e Viviano), si assume l’unità annotata in cui la loro identità è resa esplicita. Al passaggio del mouse, il grafico evidenzia l’unità della prima comparsa così definita e una <strong>linea blu</strong> indica il passo in cui sono richiamate le vicende intercorse rispetto al poema boiardesco. Il clic permette di fissare la connessione.</p>
-            </div>
-            <div class="infoStructure">
-              <h4>Incongruenze temporali</h4>
-              <p>Ogni <strong>punto</strong> segnala una determinazione temporale incompatibile con la cronologia di riferimento. Al passaggio del mouse, le unità coinvolte, comprese quelle la cui posizione dipende dalla stessa catena di rapporti temporali, vengono mostrate nella <strong>collocazione alternativa</strong> lungo l’asse della storia. Il riquadro informativo ne espone lo scarto cronologico. Con un clic la disposizione alternativa resta fissata e viene indicato anche il riferimento testuale all’origine dell’incongruenza.</p>
-            </div>
-            <div class="infoStructure">
-              <h4>Aggiunte 1532</h4>
-              <p>Gli <strong>intervalli</strong> identificano le porzioni narrative introdotte nella redazione del 1532 e ne riproducono l’estensione nel poema. Al passaggio del mouse, il grafico segnala il testo aggiunto e nasconde temporaneamente le tacche comprese nell’intervallo; con un clic, invece, le unità dell’aggiunta vengono isolate e rimangono in evidenza.</p>
-            </div>
-          </div>
-          <div class="infoEllipsesNote">
-            <h4>Sospensioni narrative</h4>
-            <p>Le <strong>sospensioni narrative</strong> individuano le porzioni del poema nelle quali non prosegue la vicenda dei personaggi selezionati: per esempio perché il racconto si sposta su altri personaggi, introduce racconti di secondo grado, digressioni, proemi o interventi del narratore, descrizioni, analessi e prolessi. Riguardano dunque i <strong>vuoti nell’ordine del racconto</strong> di una determinata linea narrativa, non necessariamente un intervallo di tempo trascorso nella storia.</p>
-            <p>Sono rappresentate da <strong>bande perpendicolari all’asse del racconto</strong>. Quelle situate prima della prima comparsa o dopo l’ultima comparsa dei personaggi selezionati sono rese più tenui.</p>
-            <br>
-            <h4>Ellissi temporali</h4>
-            <p>Le <strong>ellissi temporali</strong> individuano gli intervalli della storia che separano due eventi narrati di una linea narrativa, senza che il poema rappresenti ciò che vi accade. Se sono selezionati più personaggi, vengono mostrate soltanto le ellissi <strong>condivise</strong>, nelle quali nessuno dei personaggi scelti è presente nel racconto.</p>
-            <p>Compaiono come <strong>bande perpendicolari all’asse della storia</strong>. Anche qui le bande esterne alla prima e all’ultima unità attiva vengono visualizzate con minore intensità.</p>
-          </div>
-        </section>
+    <h5>Stacchi narrativi</h5>
+    <p>Gli <strong>stacchi narrativi</strong> sono rappresentati mediante punti corrispondenti alla posizione testuale in cui si verifica la transizione da un filo narrativo all’altro. Al passaggio del cursore, nel grafico principale compare una linea perpendicolare all’asse della narrazione che individua la posizione esatta dello stacco, mentre due ulteriori linee guida, perpendicolari all’asse della storia, indicano la collocazione cronologica delle unità narrative poste ai due lati dello stacco. La guida contraddistinta dal numero <strong>1</strong> corrisponde all’unità narrativa che lo precede e quella contraddistinta dal numero <strong>2</strong> all’unità che lo segue: la distanza e la disposizione reciproca delle due guide consentono di riconoscere se, dopo lo stacco, il racconto riprenda da un momento anteriore o posteriore rispetto all’interruzione del filo narrativo precedente. Un riquadro informativo specifica inoltre se si tratti di uno stacco interno al canto o di fine canto e indica i personaggi appartenenti al filo narrativo lasciato e a quello ripreso. Con un clic, lo stacco e le due guide restano selezionati.</p>
 
-        <section id="info-legenda-superiore">
-          <h3>5. Legenda superiore</h3>
-          <p>Nella barra superiore, accanto a <strong>Impostazioni</strong>, quattro indicatori riassumono le scelte e i livelli attualmente visualizzati.</p>
-          <div class="infoFeatureGrid">
-            <div class="infoFeature"><h4>Personaggi</h4><p>Indica quanti personaggi sono inclusi nella selezione principale.</p></div>
-            <div class="infoFeature"><h4>Testo selezionato</h4><p>Riassume i canti e le ottave selezionati, anche quando gli intervalli sono più di uno.</p></div>
-            <div class="infoFeature"><h4>Tempo selezionato</h4><p>Mostra la fascia o le fasce cronologiche attualmente incluse nel grafico.</p></div>
-            <div class="infoFeature"><h4>Struttura dell'intreccio</h4><p>Indica il numero di elementi del livello attivo; con <strong>Sovrapponi livelli</strong> riporta il totale relativo ai livelli selezionati.</p></div>
-          </div>
-          <p><strong>Esporta dati</strong> scarica un <strong>archivio ZIP</strong> che contiene tre dataset in formato Excel — unità narrative, espressioni temporali e stacchi narrativi — insieme a una <strong>guida PDF</strong>. Il pulsante circolare <strong>i</strong> apre questo pannello informativo.</p>
-        </section>
+    <h5>Connessioni narrative con l’<em>Inamoramento de Orlando</em></h5>
+    <p>Le <strong>connessioni narrative con l’<em>Inamoramento de Orlando</em></strong> sono segnalate da un punto collocato in corrispondenza della prima comparsa nel <em>Furioso</em> di un personaggio ereditato dal poema boiardesco. Al passaggio del cursore, nel grafico principale viene evidenziata la tacca relativa a tale comparsa, mentre una linea perpendicolare all’asse della narrazione indica la posizione del passo in cui il poema ricostruisce le vicende intercorse fra l’ultima comparsa del personaggio nell’<em>Inamoramento</em> e il suo ingresso nel <em>Furioso</em>. Un riquadro riporta infine le informazioni relative al personaggio coinvolto e ai riferimenti testuali della sua prima comparsa e del corrispondente passo di raccordo; con un clic, la connessione rimane selezionata.</p>
 
-        <section id="info-testo">
-          <h3>6. Il pannello del testo</h3>
-          <p>Il pulsante <strong>Testo del poema</strong> apre un lettore collegato al grafico, che permette di passare dalla visione d’insieme delle relazioni cronologiche alla lettura diretta dei passi. Il lettore è <strong>flottante</strong>: sul computer può essere spostato trascinando l’intestazione, ridimensionato e ridotto mediante il comando nell’angolo superiore.</p>
-          <h4>Navigazione</h4>
-          <ul>
-            <li>Le frecce <strong>←</strong> e <strong>→</strong> permettono di passare da un canto al precedente o al successivo.</li>
-            <li>Il menu <strong>Canto</strong> consente di scegliere un canto o <strong>Tutto il poema</strong>; il menu <strong>Ottava</strong> porta direttamente all’ottava desiderata.</li>
-            <li>Il campo <strong>Scegli un passo</strong> permette di cercare e raggiungere le unità narrative dotate di titolo. L’opzione <strong>in questo canto</strong> restringe i risultati al canto corrente. L’elenco tiene conto dei filtri e delle eventuali selezioni strutturali attive.</li>
-          </ul>
-          <h4>Collegamento con il grafico</h4>
-          <p>Un <strong>clic su una tacca</strong> nel grafico principale, o su un collegamento del diagramma di Sankey, apre il lettore sul passo pertinente e lo evidenzia. Nel testo, i frammenti appartenenti alle unità narrative selezionabili sono contraddistinti graficamente: passando il mouse su un frammento viene evidenziata la tacca corrispondente; con un clic il frammento diventa il nuovo riferimento e il grafico si porta sulla relativa unità.</p>
-          <p>Nel passo selezionato, le <strong>espressioni temporali annotate</strong> sono contrassegnate da una sottolineatura verde. La lettura resta accessibile anche nei tratti non compresi nell’annotazione della cronologia principale; quando viene fissato un elemento di uno dei livelli strutturali, il testo evidenzia i passi pertinenti a quella selezione.</p>
-          <h4>Seguire le linee narrative</h4>
-          <p>Ai margini dei passi sono presenti richiami con i <strong>nomi dei personaggi</strong>: a sinistra si raggiunge la precedente occorrenza del personaggio, a destra la successiva. In questo modo è possibile seguire una linea narrativa attraverso le sue interruzioni e riprese, senza perdere il collegamento con la collocazione cronologica delle singole unità. I richiami sono attivi per i personaggi inclusi nella selezione corrente.</p>
-        </section>
+    <h5>Incongruenze temporali</h5>
+    <p>Le <strong>incongruenze temporali</strong> sono anch’esse segnalate da punti, che corrispondono ai passi del poema nei quali emerge una determinazione temporale incompatibile con quella assunta nella ricostruzione cronologica di riferimento. Al passaggio del cursore, nel grafico principale la tacca interessata viene spostata lungo l’asse della storia dalla collocazione adottata nella cronologia ricostruita a quella risultante dall’ipotesi alternativa; insieme a essa vengono ricollocate, ove presenti, anche le tacche la cui posizione cronologica dipende da una catena di relazioni temporali che prende avvio dall’unità interessata dall’incongruenza. Nel riquadro informativo, inoltre, viene indicata la distanza temporale fra la collocazione cronologica adottata e quella alternativa; con un clic, quest’ultima rimane fissata nel grafico e una linea perpendicolare all’asse della narrazione compare a segnalare il passo in cui si trova la determinazione temporale all’origine dell’incongruenza.</p>
 
-        <section id="info-legenda-personaggi">
-          <h3>7. Legenda dei personaggi</h3>
-          <p>La legenda sotto il grafico elenca i personaggi selezionati nelle <strong>Impostazioni</strong>, associando a ciascuno il proprio colore. È possibile usarla per seguire il percorso narrativo e cronologico di un singolo personaggio senza modificare la selezione complessiva.</p>
-          <ul>
-            <li><strong>Un clic su un nome</strong> isola temporaneamente il personaggio all’interno della selezione corrente: gli altri restano attenuati e non guidano le interazioni con il grafico e il testo.</li>
-            <li><strong>Un secondo clic sullo stesso nome</strong> annulla l’isolamento e ripristina la visualizzazione di tutti i personaggi selezionati.</li>
-          </ul>
-        </section>
-        <section id="info-crediti">
-          <h3>8. Crediti</h3>
-          <p>L’Atlante è stato realizzato da <strong>Gaudenzia Genoni</strong> nell’ambito della tesi di laurea magistrale in <strong>Lettere moderne (LM-14)</strong>, discussa presso l’<strong>Università degli Studi di Milano</strong> nell’anno accademico <strong>2025/2026</strong>. Relatore della tesi è il <strong>prof. Guglielmo Barucci</strong>; correlatore, il <strong>prof. Alfio Ferrara</strong>.</p>
-        </section>
-        <section id="info-licenze">
-          <h3>9. Licenze</h3>
-          <p>I <strong>dati originali di annotazione</strong> dell’<em>Atlante cronologico del Furioso</em>, realizzati da <strong>Gaudenzia Maria Genoni (2026)</strong>, sono distribuiti con licenza <a href="https://creativecommons.org/licenses/by/4.0/deed.it" target="_blank" rel="noopener noreferrer"><strong>Creative Commons Attribuzione 4.0 Internazionale (CC BY 4.0)</strong></a>. La licenza non si estende ai materiali di terzi, compreso il testo del poema, soggetti a eventuali diritti autonomi.</p>
-        </section>
+    <h5>Aggiunte narrative del 1532</h5>
+    <p>Le <strong>aggiunte narrative del 1532</strong>, infine, sono rappresentate da segmenti la cui estensione corrisponde a quella delle porzioni testuali introdotte nella terza redazione del <em>Furioso</em>. Al passaggio del cursore, nel grafico principale compare una fascia verde corrispondente all’intervallo testuale occupato dall’aggiunta, mentre le tacche che ricadono al suo interno vengono temporaneamente nascoste; al clic, le stesse tacche sono invece isolate e mantenute in evidenza, con il resto del grafico attenuato. Il riquadro informativo indica il titolo attribuito all’aggiunta e i canti lungo cui essa si colloca.</p>
+  </section>
+
+  <section class="infoSubsection" id="info-ellissi">
+    <h4 class="infoSubheading">3.3. Sospensioni narrative ed ellissi temporali</h4>
+    <p>Accanto a questi sei livelli di analisi, la visualizzazione permette inoltre di far emergere, per ogni linea narrativa, i <strong>vuoti che si producono nel tempo del racconto e in quello della storia</strong>.</p>
+    <p>Sul piano del racconto, le <strong>sospensioni narrative</strong> sono rese mediante bande perpendicolari all’asse della narrazione e corrispondono alle porzioni del poema nelle quali l’avanzamento della linea narrativa selezionata si interrompe per lasciare spazio a racconti interni, digressioni, interventi del narratore (tra cui i proemi), descrizioni, analessi o prolessi, oppure allo sviluppo di fili narrativi estranei.</p>
+    <p>Sul piano della storia, le <strong>ellissi temporali</strong>, ortogonali alle precedenti, individuano invece gli intervalli lasciati impliciti e non raccontati fra le vicende di una stessa linea narrativa.</p>
+  </section>
+
+  <section class="infoSubsection" id="info-testo">
+    <h4 class="infoSubheading">3.4. Il pannello di lettura</h4>
+    <p>A concludere la disamina sull’<em>Atlante</em>, si aggiunga che il testo del poema è consultabile attraverso un <strong>pannello di lettura direttamente collegato al grafico</strong>, così da integrare la visione d’insieme propria del <em>distant reading</em> con la lettura ravvicinata del <em>close reading</em> e mantenere il testo come riferimento costante dell’analisi narrativa e cronologica.</p>
+    <p>Il pannello di lettura può essere aperto attraverso il pulsante <strong>Testo del poema</strong> o con un clic su una tacca del grafico (o del diagramma di Sankey): in questo secondo caso, il passo corrispondente all’unità narrativa selezionata viene evidenziato automaticamente nel pannello; è poi possibile cliccare su qualsiasi passo del testo riconducibile a un’altra unità narrativa per essere diretti alla tacca corrispondente. Ai margini sinistro e destro del passo selezionato compaiono i <strong>nomi dei personaggi</strong> presenti nell’unità narrativa, che puntano rispettivamente alla loro occorrenza precedente e successiva e consentono di seguirne il percorso attraverso le diverse apparizioni nel poema.</p>
+    <p>Vale la pena notare che un precedente di questo tipo, volto a guidare il lettore tra i fili discontinui dell’intreccio, è già attestato nell’edizione del <em>Furioso</em> pubblicata a Venezia da <strong>Vincenzo Valgrisi e dai suoi eredi fra il 1556 e il 1603</strong>, nella quale le note ai margini segnalano con il nome del personaggio il ritorno di una linea narrativa sospesa e rimandano, nel punto dell’interruzione, al luogo del poema in cui essa riprenderà: ne risulta una felice continuità fra gli accorgimenti predisposti dalla tradizione editoriale cinquecentesca del <em>Furioso</em> e la loro riproposizione in ambiente digitale, dove la navigazione ipertestuale consente di ampliare e rendere più efficace l’idea originaria.</p>
+  </section>
+</section>
+
+<section class="infoChapter" id="info-interpretazione">
+  <h3>4. Ricostruzione cronologica</h3>
+
+  <section class="infoSubsection" id="info-coordinate">
+    <h4 class="infoSubheading">4.1. Le sei coordinate e i raccordi cronologici</h4>
+    <p>L’ossatura cronologica del <em>Furioso</em> si regge su sei coordinate principali, che permettono di percorrere senza soluzione di continuità l’intero sviluppo temporale dell’opera. Esse – affiancate qui, a beneficio del lettore, dalle rispettive date ricostruibili – corrispondono alla battaglia di Montalbano (17 ottobre dell’anno I), che, con la fuga di Angelica, costituisce l’estremo iniziale della cronologia; alla morte di Pinabello (18 giugno dell’anno II); all’inizio della follia di Orlando (26 giugno dell’anno II); all’inizio (13 settembre dell’anno II) e alla fine (14 ottobre dell’anno III) del romitaggio di Rodomonte; e infine alla morte di Rodomonte (24 ottobre dell’anno III), evento che, insieme alle nozze di Bradamante e Ruggiero, rappresenta l’estremo cronologico conclusivo del poema. La collocazione di questi snodi l’uno rispetto all’altro può essere ricostruita attraverso una catena di cinque rapporti temporali, alcuni determinati con particolare precisione dal testo, altri che richiedono, almeno in parte, una quantificazione congetturale.</p>
+    <p>I raccordi determinabili direttamente dalle indicazioni testuali sono tre. Il primo collega la battaglia di Montalbano alla morte di Pinabello attraverso un intervallo di otto mesi e un giorno: il testo specifica infatti che «fornito a punto era l’ottavo mese» (<em>OF</em> XXII 72, 1) tra il primo incontro fra Bradamante e il Maganzese, collocabile nel giorno successivo alla battaglia di Montalbano, e il loro secondo incontro, coincidente con la morte di Pinabello. Il secondo raccordo collega la morte di Pinabello all’inizio della follia di Orlando attraverso una successione di otto giorni scanditi nel testo con grande precisione, dall’incontro del conte con Zerbino il giorno dopo l’uccisione del Maganzese fino al momento in cui il paladino perde definitivamente il senno (<em>OF</em> XXIII 52–132). Il terzo raccordo, da ultimo, collega l’estremo iniziale e quello finale del romitaggio di Rodomonte, la cui durata totale è fissata dal testo in «un anno, un mese e un giorno» (<em>OF</em> XLVI 102, 5).</p>
+    <p>Due ulteriori raccordi, necessari a completare la catena cronologica, richiedono invece un’integrazione congetturale. Il primo collega l’inizio della follia di Orlando all’inizio del romitaggio di Rodomonte attraverso l’attesa di Bradamante a Montalbano, che dal giorno iniziale della follia del paladino si estende complessivamente per settantun giorni, risultanti dalla somma dei «venti / giorni» di <em>OF</em> XXX 81, 1-2 e degli ulteriori «venti giorni» con il «mese appresso» di <em>OF</em> XXXII 27, 2; a tale intervallo va poi aggiunto il periodo del viaggio di Bradamante da Montalbano al ponte dove disarciona Rodomonte, al quale è stata attribuita per ipotesi una durata di otto giorni sulla base di alcune indicazioni testuali (<em>OF</em> XXXII 49–77; XXXV 31–40). Il secondo raccordo connette invece la fine del romitaggio di Rodomonte e il giorno della sua morte attraverso un intervallo rimasto in ellissi narrativa, qui quantificato in dieci giorni per consentire il viaggio del re di Sarza fino alla corte di Carlo.</p>
+  </section>
+
+  <section class="infoSubsection" id="info-ancoraggio">
+    <h4 class="infoSubheading">4.2. L’ancoraggio calendariale</h4>
+    <p>Questa catena temporale, entro i cui estremi si collocano tutti gli avvenimenti appartenenti al presente dell’azione narrativa del <em>Furioso</em>, consente così di fissare in circa <strong>due anni e sette giorni</strong> la distanza fra l’estremo iniziale e quello conclusivo dell’arco cronologico del poema. Per poter associare a tale sequenza anche una datazione, è necessario però introdurre la coordinata che costituisce l’unico vero punto di ancoraggio calendariale del <em>Furioso</em>, ovvero la partenza di Orlando da Parigi. Il testo specifica infatti che il paladino «da mezza notte tacito si parte» (<em>OF</em> VIII 86, 1) e colloca l’avvio della sua inchiesta «tra il fin d’ottobre e il capo di novembre» (<em>OF</em> IX 7, 1): la combinazione di questi due elementi consente, su basi testuali sufficientemente solide (benché nel poema la coloritura stagionale assolva certamente a una funzione più patetico-espressiva che propriamente cronologica), di identificare quella mezzanotte con il passaggio tra il 31 ottobre e il 1º novembre e, dunque, di assumere il <strong>1º novembre</strong> come data della diserzione di Orlando.</p>
+    <p>A partire da questo ancoraggio è possibile dunque datare i sei snodi fondamentali della cronologia e gli intervalli che li separano: la battaglia di Montalbano, collocata quindici giorni prima della partenza di Orlando, cade così il 17 ottobre dell’anno I; otto mesi e un giorno dopo, il 18 giugno dell’anno II, si colloca la morte di Pinabello; dopo altri otto giorni, il 26 giugno ha inizio la follia di Orlando; trascorsi settantanove giorni, il 13 settembre comincia il romitaggio di Rodomonte; un anno, un mese e un giorno dopo, il 14 ottobre dell’anno III, il romitaggio termina; infine, dieci giorni più tardi, il 24 ottobre, Rodomonte giunge alla corte di Carlo dove viene ucciso.</p>
+  </section>
+
+  <section class="infoSubsection" id="info-soglie">
+    <h4 class="infoSubheading">4.3. Le coordinate intermedie</h4>
+    <p>Se questi sei snodi sono sufficienti a determinare l’estensione cronologica complessiva del poema, per scandire tale arco in sezioni intermedie significative è necessario definire altre due coordinate: la battaglia di Parigi e la fine della follia di Orlando. Quest’ultima è direttamente collocabile al <strong>26 settembre dell’anno II</strong>, poiché la durata della follia del paladino, iniziata il 26 giugno, è chiaramente fissata nel testo a «tre mesi» (<em>OF</em> XXXIV 66, 3). La data della battaglia di Parigi può invece essere ricavata solo ricostruendo l’intervallo che la separa dall’inizio della follia di Orlando attraverso le linee narrative di Angelica e di Orlando stesso: tale intervallo, che si propone di quantificare in un mese e venti giorni, comprende il giorno che separa la battaglia di Parigi dall’incontro di Angelica con Medoro; i «pochi dì» (<em>OF</em> XXIII 119, 4) della guarigione del giovane Moro, ai quali è stata attribuita una durata di quattro giorni; il «più d’un mese» (<em>OF</em> XIX 34, 3) trascorso dai due amanti presso l’alloggio del pastore, assunto pari a un mese e cinque giorni; il lasso di tempo, lasciato implicito nella narrazione e ipotizzato della durata di cinque giorni, fra la partenza di Angelica e Medoro e l’arrivo di Orlando nel <em>locus amoenus</em> dei loro amori; e infine i cinque giorni, precisamente scanditi dal testo (<em>OF</em> XXIII 101–133), che separano tale arrivo dall’inizio della follia del conte. Retrocedendo quindi dal 26 giugno per l’intero intervallo di un mese e venti giorni così ricostruito, la battaglia di Parigi può essere collocata al <strong>6 maggio dell’anno II</strong>.</p>
+  </section>
+
+  <section class="infoSubsection" id="info-campate">
+    <h4 class="infoSubheading">4.4. I quattro raggruppamenti temporali</h4>
+    <p>Tra le coordinate fin qui individuate è possibile dunque riconoscere alcune soglie temporali che definiscono quattro grandi campate cronologiche, corrispondenti nel complesso alla tradizionale articolazione del poema in gruppi di 12, 11, 11 e 12 canti. La prima campata si estende cronologicamente dalla battaglia di Montalbano alla battaglia di Parigi e costituisce il principale orizzonte temporale dei canti I–XII; la seconda campata, compresa fra la battaglia di Parigi e l’inizio della follia di Orlando, definisce il baricentro temporale dei canti XIII–XXIII; la terza campata coincide con i tre mesi della follia di Orlando entro i quali si concentra la parte principale delle vicende dei canti XXIV–XXXIV; la quarta campata, infine, si estende dall’inizio del romitaggio di Rodomonte alla sua morte e presenta una forte dilatazione temporale entro la quale ricade la grande maggioranza degli eventi dei canti XXXV–XLVI.</p>
+  </section>
+
+  <section class="infoSubsection" id="info-contraddizioni">
+    <h4 class="infoSubheading">4.5. Le dieci incongruenze temporali</h4>
+    <p>La ricostruzione della cronologia interna restituisce un quadro complessivamente coerente, ma non privo di difficoltà. L’annotazione ha individuato <strong>dieci incongruenze temporali</strong>, di diversa natura ed entità: alcune dipendono dal raccordo fra stratificazioni redazionali, altre da indicazioni di durata incompatibili con i sincronismi stabiliti attraverso le altre linee narrative. Si esaminano qui singolarmente i punti di frizione, distinguendo le determinazioni offerte dal testo dalle soluzioni adottate nella ricostruzione.</p>
+    <div class="infoDiscrepancy" id="info-incongruenza-1">
+      <h5>1. Fiordiligi: «quasi un mese» o «sei mesi od otto»</h5>
+      <p>L’attesa di Fiordiligi a Parigi, dopo la partenza di Brandimarte, è quantificata in «quasi un mese» quando se ne annuncia l’inizio della ricerca (<em>OF</em> VIII 90, 1-5), ma in «sei mesi od otto» nell’analessi che ne ricostruisce retrospettivamente gli sviluppi (<em>OF</em> XXIV 54, 1-4). La distanza fra le due durate è troppo ampia per consentirne una conciliazione letterale. Nella rappresentazione grafica si mantiene l’indicazione del canto VIII, relativa al presente della storia, mentre la diversa durata offerta dall’analessi viene segnalata come contraddizione; assumere sei mesi d’attesa sarebbe peraltro compatibile con il successivo incontro di Fiordiligi con Zerbino, ma richiederebbe di ridurre sensibilmente la durata della ricerca della donna.</p>
+    </div>
+    <div class="infoDiscrepancy" id="info-incongruenza-2">
+      <h5>2. Orlando e Olimpia: il ritorno della primavera</h5>
+      <p>L’inserimento dell’episodio di Olimpia nella redazione del 1532 introduce una prima incongruenza nel raccordo con le ottave preesistenti. Dopo la liberazione della giovane a Ebuda, la vicenda di Orlando viene ricondotta ai primi giorni di aprile; subito dopo, tuttavia, il narratore afferma che il conte trascorse «’l resto di quel verno» senza dare notizie di sé e ne fa riprendere le imprese al ritorno della «dolce primavera» (<em>OF</em> XI 81–82). La transizione stagionale risulta così ripetuta quando è già avvenuta. Nella ricostruzione l’indicazione delle ottave XI 81–82 conserva soprattutto la funzione di introdurre un sommario, senza determinare un nuovo arretramento della linea di Orlando.</p>
+    </div>
+    <div class="infoDiscrepancy" id="info-incongruenza-3">
+      <h5>3. Orlando e Ruggiero: l’arrivo al palazzo di Atlante</h5>
+      <p>Una seconda, più profonda contraddizione legata all’aggiunta di Olimpia riguarda l’ordine di arrivo dei due paladini al palazzo di Atlante. Il «dianzi» con cui viene richiamato il passaggio di Orlando (<em>OF</em> XII 17, 6) suggerisce che questi vi sia giunto poco prima di Ruggiero. La successione delle liberazioni di Angelica e Olimpia a Ebuda impone invece l’ordine inverso: nella cronologia ricostruita Ruggiero arriva al palazzo il 31 marzo, Orlando soltanto il 17 aprile. Per evitare una dilatazione poco plausibile del viaggio di Ruggiero dopo la liberazione di Angelica, il «dianzi» deve essere riferito all’ordine del racconto, anziché all’effettiva successione degli eventi.</p>
+    </div>
+    <div class="infoDiscrepancy" id="info-incongruenza-4">
+      <h5>4. Il rapimento di Doralice: «ieri» e il giorno della battaglia</h5>
+      <p>Quando Rodomonte viene informato della sottrazione di Doralice, il messaggero dichiara che l’incontro con il cavaliere responsabile del rapimento è avvenuto «ieri» (<em>OF</em> XVIII 33, 3-4). La rete di determinazioni temporali della battaglia di Parigi colloca invece il rapimento al <strong>6 maggio dell’anno II</strong>, nella stessa giornata in cui il messaggio raggiunge Rodomonte. Si tratta di una contraddizione lieve ma inequivocabile fra il deittico del discorso diretto e la contemporaneità stabilita dalle altre linee narrative: l’indicazione «ieri» non è accolta nella collocazione cronologica dell’episodio.</p>
+    </div>
+    <div class="infoDiscrepancy" id="info-incongruenza-5">
+      <h5>5. Zerbino, Marfisa e Gabrina: una prossimità soltanto apparente</h5>
+      <p>Nel momento in cui incontra Marfisa e Gabrina, Zerbino è presentato ancora adirato per la fuga dell’armigero che aveva ferito Medoro (<em>OF</em> XX 117–119). Il raccordo situazionale sembrerebbe riportare l’incontro al <strong>7 maggio</strong>, immediatamente dopo il ferimento del giovane Moro; la convergenza delle diverse linee narrative impone però di collocarlo al <strong>18 giugno</strong>. Per salvaguardare i sincronismi è necessario supporre un’ellissi di un mese e undici giorni fra l’inseguimento dell’armigero e l’incontro con le due donne. La prossimità suggerita dal racconto lascia pertanto una residua aporia cronologica.</p>
+    </div>
+    <div class="infoDiscrepancy" id="info-incongruenza-6">
+      <h5>6. Mandricardo: i «dieci giorni» della ricerca di Orlando</h5>
+      <p>Quando raggiunge Orlando presso la fonte, Mandricardo dichiara di esserne sulle tracce da «omai dieci giorni» (<em>OF</em> XXIII 73, 1). L’inizio della sua ricerca risale però al <strong>5 maggio</strong>, mentre l’incontro con il paladino, determinato dai sincronismi con la linea di Zerbino, cade il <strong>19 giugno</strong>. L’intervallo effettivo è dunque assai maggiore dei dieci giorni dichiarati. Sebbene un viaggio breve risulti più verosimile sul piano dell’azione, l’indicazione del personaggio non può essere accolta senza compromettere la cronologia delle altre vicende; essa viene perciò scartata nella ricostruzione.</p>
+    </div>
+    <div class="infoDiscrepancy" id="info-incongruenza-7">
+      <h5>7. Zerbino: i tre giorni concessi alla ricerca</h5>
+      <p>Dopo la liberazione dello Scozzese, il testo riferisce che Zerbino intende tornare all’esercito una volta «finito che sia il terzo giorno» (<em>OF</em> XXIV 47, 7-8). La successiva visita ai luoghi devastati dalla follia di Orlando è però situata dal racconto del pastore, che ne parla come di un evento accaduto «pur dianzi» (<em>OF</em> XXIV 51, 5), al <strong>26 giugno</strong>. Poiché Zerbino si mette alla ricerca del conte il <strong>19 giugno</strong>, nella ricostruzione la sua peregrinazione si estende per sette giorni, oltrepassando sensibilmente il termine di tre giorni indicato nel testo.</p>
+    </div>
+    <div class="infoDiscrepancy" id="info-incongruenza-8">
+      <h5>8. La liberazione di Malagigi e Viviano</h5>
+      <p>La successione esposta nei canti XXV–XXVI fa apparire la liberazione di Malagigi e Viviano come uno sviluppo immediatamente successivo al <strong>18 giugno</strong>, collocabile dunque al <strong>19 giugno</strong> (<em>OF</em> XXV 94–96). L’arrivo di Ippalca presso Ruggiero dopo la liberazione, tuttavia, è sincronizzato dal suo racconto con il duello fra Rodomonte e Mandricardo, fissato al <strong>26 giugno</strong> (<em>OF</em> XXVI 55–60). Il «dì che si dovea / Malagigi mutar nei carriaggi» (<em>OF</em> XXV 96, 1-2) deve quindi essere posticipato di una settimana. L’aporia è assorbibile solo attribuendo artificialmente una durata di sette giorni al tragitto di Ruggiero e Ricciardetto verso Agrismonte.</p>
+    </div>
+    <div class="infoDiscrepancy" id="info-incongruenza-9">
+      <h5>9. Marfisa e Brunello: «dieci giorni e diece notti»</h5>
+      <p>La cattura di Brunello da parte di Marfisa avviene il <strong>30 giugno</strong>. La successiva vicenda della guerriera, compresi gli sviluppi che precedono il suo ricongiungimento con Agramante ad Arles, ne colloca l’arrivo in città al <strong>12 agosto</strong>. Il narratore afferma tuttavia che Brunello era stato tenuto prigioniero per «dieci giorni e diece / notti» (<em>OF</em> XXXII 7, 3-4): computata alla lettera, la durata farebbe arrivare Marfisa ad Arles già il 10 luglio, prima della ritirata dell’esercito moro da Parigi. L’indicazione non è conciliabile con la successione ricostruita e può al più essere intesa genericamente come riferimento a una lunga prigionia.</p>
+    </div>
+    <div class="infoDiscrepancy" id="info-incongruenza-10">
+      <h5>10. Gradasso: la permanenza presso l’isola di Agramante</h5>
+      <p>L’incontro fra Agramante e Gradasso presenta infine una difficoltà di ordine soprattutto cronologico e situazionale. Secondo la ricostruzione, Gradasso lascia Arles in nave il <strong>7 agosto</strong>, ma il <strong>30 settembre</strong> la sua imbarcazione è ancora presso l’isola dove approdano Agramante e Sobrino (<em>OF</em> XL 43–46). L’espressione «già ridutto» (<em>OF</em> XL 46, 2) consente di supporre che il fortunale abbia sospinto Gradasso sull’isola in un momento precedente; occorrerebbe però ammettere una permanenza eccezionalmente prolungata. Posticiparne la partenza da Arles contrasterebbe con la continuità degli eventi suggerita da <em>OF</em> XXXIII 95, 3-6. La piccola incongruenza rimane dunque irrisolta.</p>
+    </div>
+    <p>Nel complesso, tali discrepanze restano circoscritte rispetto all’estensione e alla complessità dell’intreccio. La loro presenza non annulla la rete di rapporti cronologici che attraversa il poema, ma consente di distinguere più precisamente le effettive contraddizioni dalle difficoltà di orientamento prodotte dalle frequenti sospensioni e riprese narrative.</p>
+  </section>
+</section>
+
+<section class="infoChapter" id="info-bibliografia">
+  <h3>5. Bibliografia minima</h3>
+  <p>Si presenta qui una selezione degli studi critici citati e dei principali contributi dedicati alla struttura narrativa, alla cronologia interna e alla temporalità dell’<em>Orlando furioso</em>. Il testo integrale del poema impiegato per l’annotazione proviene da Biblioteca Italiana, che mette a disposizione la versione digitale dell’edizione: <strong>L. Ariosto, <em>Orlando furioso</em>, a cura di L. Caretti, Torino, Einaudi, 1966</strong>. Scheda <a href="http://www.bibliotecaitaliana.it/scheda/bibit001301" target="_blank" rel="noopener noreferrer">bibit001301</a>.</p>
+    
+<ul class="infoBibliography">
+  <li>C.P. Brand, <em>Ariosto’s Continuation of the «Orlando Innamorato»</em>, in C.H. Clough (a cura di), <em>Cultural Aspects of the Italian Renaissance. Essays in Honour of Paul Oskar Kristeller</em>, Manchester, Manchester University Press; New York, A.F. Zambelli, 1976, pp. 377-385.</li>
+  <li>C.P. Brand, <em>L’entrelacement nell’«Orlando furioso»</em>, in «Giornale storico della letteratura italiana», CLIV (1977), pp. 509-532.</li>
+  <li>A. Casadei, <em>La strategia delle varianti. Le correzioni storiche del terzo «Furioso»</em>, Lucca, Pacini Fazzi, 1988.</li>
+  <li>A. Casadei, <em>Storia</em>, in A. Izzo (a cura di), <em>Lessico critico dell’«Orlando furioso»</em>, Roma, Carocci, 2016, pp. 387-403.</li>
+  <li>J.A. Cavallo, <em>Denying Closure. Ariosto’s Rewriting of the «Orlando innamorato»</em>, in J.A. Cavallo, C.S. Ross (a cura di), <em>Fortune and Romance. Boiardo in America</em>, Tempe, Medieval and Renaissance Texts and Studies, 1998, pp. 97-134.</li>
+  <li>G. Dalla Palma, <em>Le strutture narrative dell’«Orlando furioso»</em>, Firenze, Olschki, 1984.</li>
+  <li>M. Dorigatti, <em>Il manoscritto dell’«Orlando furioso» (1505–1515)</em>, in G. Venturi (a cura di), <em>L’uno e l’altro Ariosto. In corte e nelle delizie</em>, Firenze, Olschki, 2011, pp. 1-44.</li>
+  <li>L. Ferraro, <em>In labirintiche selve. L’«Orlando furioso» letto per gruppi di canti</em>, Firenze, Franco Cesati, 2025.</li>
+  <li>A. Izzo, <em>«Al fin trarre l’impresa». Prassi di chiusura narrativa e ideologia del tempo nell’«Orlando furioso»</em>, in «Strumenti critici», XX/2 (2005), pp. 225-246.</li>
+  <li>D. Javitch, <em>Proclaiming a Classic. The Canonization of «Orlando Furioso»</em>, Princeton, Princeton University Press, 1991.</li>
+  <li>S. Jossa, <em>Tempo e tempi dell’«Orlando furioso»</em>, in C. Cassiani, M.C. Figorilli (a cura di), <em>Festina lente. Il tempo della scrittura nella letteratura del Cinquecento</em>, Roma, Storia e Letteratura, 2014, pp. 165-181.</li>
+  <li>C. Montagnani, <em>Doppio sogno. Autore e lettore alla disfida dell’intreccio</em>, in «Schifanoia», LIV-LV/1-2 (2018), pp. 27-32.</li>
+  <li>L. Pampaloni, <em>Per una analisi narrativa del «Furioso»</em>, in «Belfagor», XXVI/2 (1971), pp. 133-150.</li>
+  <li>P.A. Parker, <em>Inescapable Romance. Studies in the Poetics of a Mode</em>, Princeton, Princeton University Press, 1979.</li>
+  <li>M. Praloran, <em>«Maraviglioso artificio». Tecniche narrative e rappresentative nell’«Orlando innamorato»</em>, Lucca, Pacini Fazzi, 1990.</li>
+  <li>M. Praloran, <em>Tempo e azione nell’«Orlando furioso»</em>, Firenze, Olschki, 1999.</li>
+  <li>M. Praloran, <em>Le strutture narrative dell’«Orlando furioso»</em>, in «Strumenti critici», XXIV/1 (2009), pp. 1-24.</li>
+  <li>A. Roncaccia, <em>Struttura</em>, in A. Izzo (a cura di), <em>Lessico critico dell’«Orlando furioso»</em>, Roma, Carocci, 2016, pp. 405-426.</li>
+  <li>G. Sangirardi, <em>Boiardismo ariostesco. Presenza e trattamento dell’«Orlando innamorato» nel «Furioso»</em>, Lucca, Pacini Fazzi, 1993.</li>
+  <li>G. Sangirardi, <em>Sul tempo nel «Furioso». Riflessioni a proposito di un libro di M. Praloran</em>, in «Italianistica», XXXI/1 (2002), pp. 145-150.</li>
+  <li>F. Tomasi, <em>Entrelacement</em>, in A. Izzo (a cura di), <em>Lessico critico dell’«Orlando furioso»</em>, Roma, Carocci, 2016, pp. 61-80.</li>
+  <li>E.B. Weaver, <em>A Reading of the Interlaced Plot of the «Orlando furioso». The Three Cases of Love Madness</em> [1977], in D. Beecher, M. Ciavolella, R. Fedi (a cura di), <em>Ariosto Today. Contemporary Perspectives</em>, Toronto, University of Toronto Press, 2003, pp. 126-153.</li>
+  <li>S. Zatti, <em>Il «Furioso» fra epos e romanzo</em>, Lucca, Pacini Fazzi, 1990.</li>
+</ul>
+</section>
+
+<section id="info-crediti">
+  <h3>6. Crediti e licenze</h3>
+  <p>
+    L’<em>Atlante cronologico del Furioso</em> è stato realizzato da
+    <a href="https://expertise.unimi.it/individual?uri=http%3A%2F%2Firises.unimi.it%2Fresource%2Fperson%2F79199" target="_blank" rel="noopener noreferrer"><strong>Gaudenzia Maria Genoni</strong></a>
+    nell’ambito della tesi di laurea magistrale in Lettere moderne (LM-14),
+    discussa presso l’Università degli Studi di Milano
+    nell’anno accademico 2025/2026.
+    Relatore della tesi è stato il professor
+    <a href="https://www.unimi.it/it/ugov/person/guglielmo-barucci" target="_blank" rel="noopener noreferrer"><strong>Guglielmo Barucci</strong></a>;
+    correlatore, il professor
+    <a href="https://www.unimi.it/it/ugov/person/alfio-ferrara" target="_blank" rel="noopener noreferrer"><strong>Alfio Ferrara</strong></a>.
+  </p>
+  <p>
+    I dati originali di annotazione dell’<em>Atlante cronologico del Furioso</em>
+    sono distribuiti con licenza
+    <a href="https://creativecommons.org/licenses/by/4.0/deed.it" target="_blank" rel="noopener noreferrer"><strong>Creative Commons Attribuzione 4.0 Internazionale (CC BY 4.0)</strong></a>.
+  </p>
+</section>
+
+
       </div>
     </div>
   </div>
 </aside>
+
+
 <section class="chartCard"><div class="chartHead"><span class="zoomReadout chartZoomReadout" id="zoomReadout"></span><span id="chartStatus"></span></div><div class="svgwrap" id="svgwrap"><svg aria-label="Grafico unificato del tempo della storia e della narrazione" class="chart" id="chart" role="img"></svg><button aria-label="Ripristina orientamento degli assi" aria-pressed="true" class="swapAxesFloating" data-tooltip="inverti gli assi" id="swapAxes" title="inverti gli assi" type="button"><svg aria-hidden="true" class="swapAxesIcon" viewBox="0 0 24 24"><path class="swapAxisLine" d="M6.2 17.8H17.2"/><path class="swapAxisArrowFill" d="M19.2 17.8 16.2 15.95 16.2 19.65Z"/><path class="swapAxisLine" d="M6.2 17.8V6.8"/><path class="swapAxisArrowFill" d="M6.2 4.8 4.35 7.8 8.05 7.8Z"/></svg></button><div class="axisScroller axisScrollerX" id="axisScrollerX" hidden><input aria-label="Scorri l’asse orizzontale" max="1000" min="0" step="1" type="range"/></div><div class="axisScroller axisScrollerY" id="axisScrollerY" hidden><input aria-label="Scorri l’asse verticale" max="1000" min="0" step="1" type="range"/></div></div></section>
 <div class="legend characterLegend" id="legend"></div>
 
